@@ -34,33 +34,33 @@
     </ul>
 </nav>
 
-<main>
-    <section>
-        <h1>Your Cart</h1>
+<main class="main">
+    <section class="cart">
+        <h1 class="cart__title">Your Cart</h1>
 
-        <div>
-            <div>
-                <div>
-                    <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="product image" width="150" height="150">
+        <div class="cart__item" style="border: 1px black solid;">
+            <div class="cart__item-main" style="border: 1px red solid;">
+                <div class="cart__item-media">
+                    <img class="cart__item-image" src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="product image" width="150" height="150">
                 </div>
 
-                <div>
-                    <h2>Product Name</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure exercitationem dolore sunt commodi, minima reprehenderit!</p>
+                <div class="cart__item-details" style="border: 1px blue solid;">
+                    <h2 class="cart__item-title">Product Name</h2>
+                    <p class="cart__item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure exercitationem dolore sunt commodi, minima reprehenderit!</p>
 
-                    <div>
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                    <div class="cart__item-qty">
+                        <button class="cart__item-qty-btn" aria-label="Decrease quantity">-</button>
+                        <span class="cart__item-qty-value">1</span>
+                        <button class="cart__item-qty-btn" aria-label="Increase quantity">+</button>
                     </div>
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <button>Trash</button>
+            <div class="cart__item-side">
+                <div class="cart__item-remove">
+                    <button class="cart__item-remove-btn" aria-label="Remove item">Trash</button>
                 </div>
-                <p>$40</p>
+                <p class="cart__item-price">$40</p>
             </div>
         </div>
 
