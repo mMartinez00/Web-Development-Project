@@ -38,13 +38,13 @@
     <section class="cart">
         <h1 class="cart__title">Your Cart</h1>
 
-        <div class="cart__item" style="border: 1px black solid;">
-            <div class="cart__item-main" style="border: 1px red solid;">
+        <div class="cart__item">
+            <div class="cart__item-main">
                 <div class="cart__item-media">
                     <img class="cart__item-image" src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="product image" width="150" height="150">
                 </div>
 
-                <div class="cart__item-details" style="border: 1px blue solid;">
+                <div class="cart__item-details">
                     <h2 class="cart__item-title">Product Name</h2>
                     <p class="cart__item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure exercitationem dolore sunt commodi, minima reprehenderit!</p>
 
@@ -118,18 +118,18 @@
         </div>
     </section>
 
-    <aside>
-        <div>
-            <h2>Cart Summary</h2>
+    <aside class="cart__summary">
+        <div class="cart__summary-box">
+            <h2 class="cart__summary-title">Cart Summary</h2>
 
-            <p>Subtotal: <span>$35</span></p>
-            <p>Shipping: <span>$0</span></p>
-            <p>Discount: <span>$0</span></p>
-            <p>Tax: <span>0</span></p>
+            <p class="cart__summary-row">Subtotal: <span class="cart__summary-value">$35</span></p>
+            <p class="cart__summary-row">Shipping: <span class="cart__summary-value">$0</span></p>
+            <p class="cart__summary-row">Discount: <span class="cart__summary-value">$0</span></p>
+            <p class="cart__summary-row">Tax: <span class="cart__summary-value">0</span></p>
         </div>
-        <hr>
-        <div>
-            <p>Total: <span>$35</span></p>
+        <hr class="cart__summary-divider">
+        <div class="cart__summary-total-row">
+            <p class="cart__summary-total">Total: <span class="cart__summary-value">$35</span></p>
             <button>Check Out</button>
         </div>
     </aside>
