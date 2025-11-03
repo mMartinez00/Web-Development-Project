@@ -98,19 +98,21 @@
             </form>
         </div>
 
-        <aside>
-            <div>
-                <h2>Cart Summary</h2>
+        <aside class="checkout__summary">
+            <div class="checkout__summary-details">
+                <h2 class="checkout__summary-title">Cart Summary</h2>
 
-                <p>Subtotal: <span>$35</span></p>
-                <p>Shipping: <span>$0</span></p>
-                <p>Discount: <span>$0</span></p>
-                <p>Tax: <span>0</span></p>
+                <p class="checkout__summary-item">Subtotal: <span class="checkout__summary-value">$35</span></p>
+                <p class="checkout__summary-item">Shipping: <span class="checkout__summary-value">$0</span></p>
+                <p class="checkout__summary-item">Discount: <span class="checkout__summary-value">$0</span></p>
+                <p class="checkout__summary-item">Tax: <span class="checkout__summary-value">0</span></p>
             </div>
-            <hr>
-            <div>
-                <p>Total: <span>$35</span></p>
-                <button>Place Order</button>
+
+            <hr class="checkout__summary-divider" />
+
+            <div class="checkout__summary-total">
+                <p class="checkout__total-text">Total: <span class="checkout__total-value">$35</span></p>
+                <button class="checkout__btn">Place Order</button>
             </div>
         </aside>
     </section>
