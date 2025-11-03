@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <nav class="navbar">
+<nav class="navbar">
     <div class="navbar__brand">
         Logo
     </div>
@@ -41,8 +41,8 @@
 
         <form class="products__filters-form" action="">
             <div class="products__filter-group products__filter-group--category">
-                <label for="category-filter" class="products-category">Categories:</label>
-                <select name="category-filter" class="products__select" id="category-filter">
+                <label for="category-filter" class="products__label products__label--category">Categories:</label>
+                <select name="category-filter" class="products__select products__select--category" id="category-filter">
                     <option value="all">All</option>
                     <option value="shirts">Shirts</option>
                     <option value="hoodies">Hoodies</option>
@@ -52,8 +52,8 @@
             </div>
 
             <div class="products__filter-group products__filter-group--price">
-                <label for="price" class="products-price">Price:</label>
-                <select name="price" id="price" class="products__filter-price--select">
+                <label for="price" class="products__label products__label--price">Price:</label>
+                <select name="price" id="price" class="products__select products__select--price">
                     <option value="default">Sort by</option>
                     <option value="high-to-low">High to Low</option>
                     <option value="low-to-high">Low to High</option>
@@ -61,8 +61,8 @@
             </div>
 
             <div class="products__filter-group products__filter-group--sizes">
-                <label for="sizes" class="products-sizes">Sizes:</label>
-                <select name="sizes" id="sizes" class="products__filter-sizes--select">
+                <label for="sizes" class="products__label products__label--sizes">Sizes:</label>
+                <select name="sizes" id="sizes" class="products__select products__select--sizes">
                     <option value="small">Small</option>
                     <option value="medium">Medium</option>
                     <option value="large">Large</option>
@@ -72,32 +72,33 @@
         </form>
     </section>
 
-    <section>
-        <div>
-            <div>
-                <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="product" width="100" height="100">
-                <p>Product 1</p>
-                <span>Brief Description</span>
-                <div>
-                    <p>$40</p>
-                    <button>Add to Card</button>
-                </div>
+    <section class="products__grid">
+        <article class="products__card">
+            <div class="products__card-info">
+                <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" class="products__card-image" alt="product" width="100" height="100">
+                <h2 class="product__card-name">Product 1</h2>
+                <p class="product__card-description">Brief Description</p>
             </div>
-        </div>
+            <div class="products__card-footer">
+                <p class="products__card-price">$40</p>
+                <button class="products__card-btn">Add to Cart</button>
+            </div>
+        </article>
 
-        <div>
-            <div>
-                <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="product" width="100" height="100">
-                <p>Product 1</p>
-                <span>Brief Description</span>
-                <div>
-                    <p>$40</p>
-                    <button>Add to Card</button>
-                </div>
+        <article class="products__card">
+            <div class="products__card-info">
+                <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" class="products__card-image" alt="product" width="100" height="100">
+                <h2 class="product__card-name">Product 1</h2>
+                <p class="product__card-description">Brief Description</p>
             </div>
-        </div>
-        </section>
-        </main>
+            <div class="products__card-footer">
+                <p class="products__card-price">$40</p>
+                <button class="products__card-btn">Add to Cart</button>
+            </div>
+        </article>
+    </section>
+</main>
+
 <footer class="footer">
     <p class="foot__copy">&copy; The Falcons</p>
 
