@@ -43,27 +43,31 @@
             <div class="products__filter-group products__filter-group--category">
                 <label for="category-filter" class="products__label">Categories:</label>
                 <select name="category-filter" class="products__select" id="category-filter">
-                <option value="all">All</option>
-                <option value="shirts">Shirts</option>
-                <option value="hoodies">Hoodies</option>
-                <option value="mugs">Coffee Mugs</option>
-                <option value="stickers">Stickers</option>
-            </select>
+                    <option value="all">All</option>
+                    <option value="shirts">Shirts</option>
+                    <option value="hoodies">Hoodies</option>
+                    <option value="mugs">Coffee Mugs</option>
+                    <option value="stickers">Stickers</option>
+                </select>
+            </div>
 
-            <label for="price">Price:</label>
-            <select name="price" id="price">
-                <option value="default">Sort by</option>
-                <option value="high-to-low">High to Low</option>
-                <option value="low-to-high">Low to High</option>
-            </select>
+            <div class="products__filter-group products__filter-group--price">
+                <label for="price" class="products-price">Price:</label>
+                <select name="price" id="price" class="products__filter-price--select">
+                    <option value="default">Sort by</option>
+                    <option value="high-to-low">High to Low</option>
+                    <option value="low-to-high">Low to High</option>
+                </select>
+            </div>
 
-            <label for="sizes">Sizes:</label>
-            <select name="sizes" id="sizes">
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-                <option value="x-large">X-Large</option>
-            </select>
+            <div class="products__filter-group products__filter-group--sizes">
+                <label for="sizes" class="products-sizes">Sizes:</label>
+                <select name="sizes" id="sizes" class="products__filter-sizes--select">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="x-large">X-Large</option>
+                </select>
             </div>
         </form>
     </section>
