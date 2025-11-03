@@ -3,66 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Page</title>
-    
+  <title>Contact · The Falcons</title>
 </head>
-    GET IN TOUCH
-    <image src="assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt= "falcons logo"
-      width= "250" height= "250">     
+<body>
+  
+  <nav class="navbar">
+    <div class="navbar__brand">
+        Logo
+    </div>
+
+    <ul class="navbar__menu">
+        <li class="navbar__item">
+            <a class="navbar__link" href="./index.html">Home</a>
+        </li>
+        <li class="navbar__item">
+            <a class="navbar__link" href="./about.html">About</a>
+        </li>
+        <li class="navbar__item">
+            <a class="navbar__link" href="./blog.html">Blog</a>
+        </li>
+        <li class="navbar__item">
+            <a class="navbar__link" href="./product.html">Shop</a>
+        </li>
+        <li class="navbar__item">
+            <a class="navbar__link" href="./contact.html">Contact</a>
+        </li>
+        <li class="navbar__item">
+            <a class="navbar__link" href="./login.html">Login</a>
+        </li>
+    </ul>
+</nav>
     
-      <body>
-        <div>
-         <p>
-      At The Falcons, we have a clear vision:<br>
-to personalize the best possible experience for our clients.<br>
-So don’t hesitate to contact us with any inquiries.
-</p>
-</div>
+  
 
-           <form action="mailto:yourname@example.com" method="post" enctype="text/plain">
-  <label for="name">Full Name:</label><br>
-  <input type="text" id="name" name="Name" required><br><br>
-
-  <label for="email">Email:</label><br>
-  <input type="email" id="email" name="Email" required><br><br>
-
-  <label for="subject">Subject:</label><br>
-  <input type="text" id="subject" name="Subject"><br><br>
-   
-  <label for="message">Message:</label><br>
-  <textarea id="message" name="Message" rows="5" cols="30" required></textarea><br><br>
-
-  <div>
-  <input type="submit" value="Send">
-  <input type="reset" value="Clear"><br>
-  </div>
-
-     <div>
-  <footer>
-    <p>&copy; The Falcons</p>
+  <main class="main">
+    <section class="contact">
+      <div class ="contact_info">
+      <header class="contact__header">
+      <h1 class="contact__title">Get in Touch</h1>
+      </header>
+       <p class="contact__intro">
+        At The Falcons, we have a clear vision: to personalize the best experience for our clients.
+       </p>
+        
+       <p class="contact__number">(888) 888-8888></p>
+       <p class="contact__email"> thefalconsmail@falcons.com</p>
+       <p class="contact__location">New york, New york</p>
     
-      <img src="assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="falcons logo"
-      width= "150" height= "150"><br>
+    </div>
 
-    <ul>
-        <li>
-            <a href="#">Facebook</a>
+
+     
+      <div>
+      <form class="contact__form" action="mailto:yourname@example.com" method="post" enctype="text/plain">
+        <div class="contact__field">
+          <label class="contact__label" for="name">Full Name:</label>
+          <input class="contact__input" type="text" id="name" name="Name" required>
+        </div>
+        <div class="contact__field">
+          <label class="contact__label" for="email">Email:</label>
+          <input class="contact__input" type="email" id="email" name="Email" required>
+        </div>
+        <div class="contact__field">
+          <label class="contact__label" for="message">Message:</label>
+          <textarea class="contact__textarea" id="message" name="Message" rows="5" required></textarea>
+        </div>
+        <div class="contact__actions">
+          <input class="button button--primary contact__submit" type="submit" value="Send">
+        </div>
+      </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="foot__copy">&copy; The Falcons</p>
+
+    <ul class="footer__social">
+        <li class="footer__social-item">
+            <a class="footer__social-link" href="#">Facebook</a>
         </li>
-        <li>
-            <a href="#">X</a>
+        <li class="footer__social-item">
+            <a class="footer__social-link" href="#">X</a>
         </li>
-        <li>
-            <a href="#">Instagram</a>
+        <li class="footer__social-item">
+            <a class="footer__social-link" href="#">Instagram</a>
         </li>
-        <li>
-            <a href="#">TikTok</a>
+        <li class="footer__social-item">
+            <a class="footer__social-link" href="#">TikTok</a>
         </li>
     </ul>
 </footer>
-  </div>
 
-
-
-</form>
 </body>
- </html>
+</html>
