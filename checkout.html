@@ -34,16 +34,31 @@
     </ul>
 </nav>
 
-<main>
-    <section>
-        <h1>Check Out</h1>
+<main class="main checkout">
+    <section class="checkout__section">
+        <h1 class="checkout__title">Check Out</h1>
 
-        <div>
-            <form action="">
-                <div>
-                    <label for="name">
-                        First Name: <input type="text" name="firstname" id="name">
-                        Last Name: <input type="text" name="lasttname" id="name">
+        <div class="checkout__form-wrapper">
+            <form class="checkout__form" action="">
+                <div class="checkout__form-group checkout__form-group--name">
+                    <label for="firstname" class="checkout__label">
+                        First Name:
+                            <input
+                            type="text"
+                            name="firstname"
+                            id="firstname"
+                            class="checkout__input checkout__input--firstname"
+                            />
+                    </label>
+
+                    <label for="lastname" class="checkout__label">
+                        Last Name:
+                            <input
+                            type="text"
+                            name="lastname"
+                            id="lastname"
+                            class="checkout__input checkout__input--lastname"
+                            />
                     </label>
                 </div>
                 <div>
