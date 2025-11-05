@@ -3,161 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
     <title>Shop</title>
 </head>
 <body>
 
-    <nav>
-    <div>
+<nav class="navbar">
+    <div class="navbar__brand">
         Logo
     </div>
 
-    <ul>
-        <li>
-            <a href="./index.html">Home</a>
+    <ul class="navbar__menu">
+        <li class="navbar__item">
+            <a class="navbar__link" href="./index.html">Home</a>
         </li>
-        <li>
-            <a href="./about.html">About</a>
+        <li class="navbar__item">
+            <a class="navbar__link" href="./about.html">About</a>
         </li>
-        <li>
-            <a href="./blog.html">Blog</a>
+        <li class="navbar__item">
+            <a class="navbar__link" href="./blog.html">Blog</a>
         </li>
-        <li>
-            <a href="./product.html">Shop</a>
+        <li class="navbar__item">
+            <a class="navbar__link" href="./product.html">Shop</a>
         </li>
-        <li>
-            <a href="./contact.html">Contact</a>
+        <li class="navbar__item">
+            <a class="navbar__link" href="./contact.html">Contact</a>
         </li>
-        <li>
-            <a href="./login.html">Login</a>
+        <li class="navbar__item">
+            <a class="navbar__link" href="./login.html">Login</a>
         </li>
     </ul>
 </nav>
 
-<main>
-    <section>
-        <h1>Our Products</h1>
-    </section>
+<main class="main products">
+    
+    <section class="products__filters">
+        <h1 class="products__title">Our Products</h1>
 
-    <section>
-        <form action="">
-            <label for="category-filter">Categories:</label>
-            <select name="category-filter" id="category-filter">
-                <option value="all">All</option>
-                <option value="shirts">Shirts</option>
-                <option value="hoodies">Hoodies</option>
-                <option value="mugs">Coffee Mugs</option>
-                <option value="stickers">Stickers</option>
-            </select>
+        <form class="products__filters-form" action="">
+            <div class="products__filter-group products__filter-group--category">
+                <label for="category-filter" class="products__label products__label--category">Categories:</label>
+                <select name="category-filter" class="products__select products__select--category" id="category-filter">
+                    <option value="all">All</option>
+                    <option value="shirts">Shirts</option>
+                    <option value="hoodies">Hoodies</option>
+                    <option value="mugs">Coffee Mugs</option>
+                    <option value="stickers">Stickers</option>
+                </select>
+            </div>
 
-            <label for="price">Price:</label>
-            <select name="price" id="price">
-                <option value="default">Sort by</option>
-                <option value="high-to-low">High to Low</option>
-                <option value="low-to-high">Low to High</option>
-            </select>
+            <div class="products__filter-group products__filter-group--price">
+                <label for="price" class="products__label products__label--price">Price:</label>
+                <select name="price" id="price" class="products__select products__select--price">
+                    <option value="default">Sort by</option>
+                    <option value="high-to-low">High to Low</option>
+                    <option value="low-to-high">Low to High</option>
+                </select>
+            </div>
 
-            <label for="sizes">Sizes:</label>
-            <select name="sizes" id="sizes">
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-                <option value="x-large">X-Large</option>
-            </select>
+            <div class="products__filter-group products__filter-group--sizes">
+                <label for="sizes" class="products__label products__label--sizes">Sizes:</label>
+                <select name="sizes" id="sizes" class="products__select products__select--sizes">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="x-large">X-Large</option>
+                </select>
+            </div>
         </form>
     </section>
 
-    <section>
-        <div>
-            <div>
-                <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="product" width="100" height="100">
-                <p>Product 1</p>
-                <span>Brief Description</span>
-                <div>
-                    <p>$40</p>
-                    <button>Add to Card</button>
-                </div>
+    <section class="products__grid">
+        <article class="products__card">
+            <div class="products__card-info">
+                <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" class="products__card-image" alt="product" width="100" height="100">
+                <h2 class="product__card-name">Product 1</h2>
+                <p class="product__card-description">Brief Description</p>
             </div>
-        </div>
-
-        <div>
-            <div>
-                <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="product" width="100" height="100">
-                <p>Product 1</p>
-                <span>Brief Description</span>
-                <div>
-                    <p>$40</p>
-                    <button>Add to Card</button>
-                </div>
+            <div class="products__card-footer">
+                <p class="products__card-price">$40</p>
+                <button class="products__card-btn">Add to Cart</button>
             </div>
-        </div>
+        </article>
 
-        <div>
-            <div>
-                <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="product" width="100" height="100">
-                <p>Product 1</p>
-                <span>Brief Description</span>
-                <div>
-                    <p>$40</p>
-                    <button>Add to Card</button>
-                </div>
+        <article class="products__card">
+            <div class="products__card-info">
+                <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" class="products__card-image" alt="product" width="100" height="100">
+                <h2 class="product__card-name">Product 1</h2>
+                <p class="product__card-description">Brief Description</p>
             </div>
-        </div>
-
-
-        <div>
-            <div>
-                <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="product" width="100" height="100">
-                <p>Product 1</p>
-                <span>Brief Description</span>
-                <div>
-                    <p>$40</p>
-                    <button>Add to Card</button>
-                </div>
+            <div class="products__card-footer">
+                <p class="products__card-price">$40</p>
+                <button class="products__card-btn">Add to Cart</button>
             </div>
-        </div>
-
-        <div>
-            <div>
-                <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="product" width="100" height="100">
-                <p>Product 1</p>
-                <span>Brief Description</span>
-                <div>
-                    <p>$40</p>
-                    <button>Add to Card</button>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div>
-                <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="product" width="100" height="100">
-                <p>Product 1</p>
-                <span>Brief Description</span>
-                <div>
-                    <p>$40</p>
-                    <button>Add to Card</button>
-                </div>
-            </div>
-        </div>
+        </article>
     </section>
 </main>
 
-<footer>
-    <p>&copy; The Falcons</p>
+<footer class="footer">
+    <p class="foot__copy">&copy; The Falcons</p>
 
-    <ul>
-        <li>
-            <a href="#">Facebook</a>
+    <ul class="footer__social">
+        <li class="footer__social-item">
+            <a class="footer__social-link" href="#">Facebook</a>
         </li>
-        <li>
-            <a href="#">X</a>
+        <li class="footer__social-item">
+            <a class="footer__social-link" href="#">X</a>
         </li>
-        <li>
-            <a href="#">Instagram</a>
+        <li class="footer__social-item">
+            <a class="footer__social-link" href="#">Instagram</a>
         </li>
-        <li>
-            <a href="#">TikTok</a>
+        <li class="footer__social-item">
+            <a class="footer__social-link" href="#">TikTok</a>
         </li>
     </ul>
 </footer>

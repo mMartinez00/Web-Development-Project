@@ -3,107 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
     <title>Check Out</title>
 </head>
 <body>
 
-<nav>
-    <div>
+<nav class="navbar">
+    <div class="navbar__brand">
         Logo
     </div>
 
-    <ul>
-        <li>
-            <a href="./index.html">Home</a>
+    <ul class="navbar__menu">
+        <li class="navbar__item">
+            <a class="navbar__link" href="./index.html">Home</a>
         </li>
-        <li>
-            <a href="./about.html">About</a>
+        <li class="navbar__item">
+            <a class="navbar__link" href="./about.html">About</a>
         </li>
-        <li>
-            <a href="./blog.html">Blog</a>
+        <li class="navbar__item">
+            <a class="navbar__link" href="./blog.html">Blog</a>
         </li>
-        <li>
-            <a href="./product.html">Shop</a>
+        <li class="navbar__item">
+            <a class="navbar__link" href="./product.html">Shop</a>
         </li>
-        <li>
-            <a href="./contact.html">Contact</a>
+        <li class="navbar__item">
+            <a class="navbar__link" href="./contact.html">Contact</a>
         </li>
-        <li>
-            <a href="./login.html">Login</a>
+        <li class="navbar__item">
+            <a class="navbar__link" href="./login.html">Login</a>
         </li>
     </ul>
 </nav>
 
-<main>
-    <section>
-        <h1>Check Out</h1>
+<main class="main checkout">
+    <section class="checkout__section">
+        <h1 class="checkout__title">Check Out</h1>
 
-        <div>
-            <form action="">
-                <div>
-                    <label for="name">
-                        First Name: <input type="text" name="firstname" id="name">
-                        Last Name: <input type="text" name="lasttname" id="name">
+        <div class="checkout__form-wrapper">
+            <form class="checkout__form" action="">
+                <div class="checkout__form-group checkout__form-group--name">
+
+                    <label for="firstname" class="checkout__label">
+                        First Name:
+                            <input
+                            type="text"
+                            name="firstname"
+                            id="firstname"
+                            class="checkout__input checkout__input--firstname"
+                            />
+                    </label>
+
+                    <label for="lastname" class="checkout__label">
+                        Last Name:
+                            <input
+                            type="text"
+                            name="lastname"
+                            id="lastname"
+                            class="checkout__input checkout__input--lastname"
+                            />
                     </label>
                 </div>
-                <div>
-                    <label for="address">
-                        Street Address: <input type="text" name="streetaddress" id="address"><br>
-                        Apt: <input type="text" name="apt" id="address">
-                        State: <select name="state" id="address">
-                            <option value="ny">NY</option>
-                            <option value="ny">NJ</option>
-                            <option value="ny">CA</option>
-                        </select>
-                        Zip Code: <input type="text" name="zipcode" id="address">
+
+                <div class="checkout__form-group checkout__form-group--address">
+                    <label for="streetaddress" class="checkout__label">
+                        Street Address: <input type="text" name="streetaddress" id="streetaddress" class="checkout__input checkout__input--street">
+                    </label>
+
+                    <label for="apt" class="checkout__label">
+                        Apt: <input type="text" name="apt" id="address" class="checkout__input checkout__input--apt">
+                    </label>
+                        
+                    <label for="state" class="checkout__label">
+                        State: <select name="state" id="address" class="checkout__select checkout__select--state">
+                                    <option value="ny">NY</option>
+                                    <option value="ny">NJ</option>
+                                    <option value="ny">CA</option>
+                                </select>
+                    </label>
+
+                    <label for="zipcode" class="checkout__label">
+                        Zip Code: <input type="text" name="zipcode" id="address" class="checkout_input checkout__select--zipcode">
                     </label>
                 </div>
-                <div>
-                    <label for="contact">
-                        Contact Information <br>
-                        Email: <input type="email"> <br>
-                        Phone Number: <input type="tel">
+
+                <div class="checkout__form-group checkout__form-group--contact">
+                    <h2 class="checkout__subtitle">Contact Information</h2>
+                    <label for="contact" class="checkout__contact">
+                        Email: <input type="email" class="checkout__input checkout__input--email"> <br>
+                    </label>
+
+                    <label for="phone" class="checkout__phone">
+                        Phone Number: <input type="tel" name="phone" id="phone" class="checkout__input checkout__input--phone">
                     </label>
                 </div>
             </form>
         </div>
 
-        <aside>
-            <div>
-                <h2>Cart Summary</h2>
+        <aside class="checkout__summary">
+            <div class="checkout__summary-details">
+                <h2 class="checkout__summary-title">Cart Summary</h2>
 
-                <p>Subtotal: <span>$35</span></p>
-                <p>Shipping: <span>$0</span></p>
-                <p>Discount: <span>$0</span></p>
-                <p>Tax: <span>0</span></p>
+                <p class="checkout__summary-item">Subtotal: <span class="checkout__summary-value">$35</span></p>
+                <p class="checkout__summary-item">Shipping: <span class="checkout__summary-value">$0</span></p>
+                <p class="checkout__summary-item">Discount: <span class="checkout__summary-value">$0</span></p>
+                <p class="checkout__summary-item">Tax: <span class="checkout__summary-value">0</span></p>
             </div>
-            <hr>
-            <div>
-                <p>Total: <span>$35</span></p>
-                <button>Place Order</button>
+
+            <hr class="checkout__summary-divider" />
+
+            <div class="checkout__summary-total">
+                <p class="checkout__total-text">Total: <span class="checkout__total-value">$35</span></p>
+                <button class="checkout__btn">Place Order</button>
             </div>
         </aside>
     </section>
 </main>
 
-<footer>
-    <p>&copy; The Falcons</p>
+<footer class="footer">
+    <p class="foot__copy">&copy; The Falcons</p>
 
-    <ul>
-        <li>
-            <a href="#">Facebook</a>
+    <ul class="footer__social">
+        <li class="footer__social-item">
+            <a class="footer__social-link" href="#">Facebook</a>
         </li>
-        <li>
-            <a href="#">X</a>
+        <li class="footer__social-item">
+            <a class="footer__social-link" href="#">X</a>
         </li>
-        <li>
-            <a href="#">Instagram</a>
+        <li class="footer__social-item">
+            <a class="footer__social-link" href="#">Instagram</a>
         </li>
-        <li>
-            <a href="#">TikTok</a>
+        <li class="footer__social-item">
+            <a class="footer__social-link" href="#">TikTok</a>
         </li>
     </ul>
 </footer>
+
     
 </body>
 </html>
