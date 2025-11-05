@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Falcons Sticker",
+    "type": "sticker",
+    "price": 5,
+    "image": "./assets/images/falcons-sticker.png",
+    "description": "High-quality die-cut sticker featuring The Falcons logo with a glossy finish."
+  },
+  {
+    "id": 2,
+    "name": "Falcons Coffee Mug",
+    "type": "mug",
+    "price": 15,
+    "image": "./assets/images/falcons-mug.png",
+    "description": "White ceramic coffee mug featuring The Falcons logo printed on the front."
+  },
+  {
+    "id": 3,
+    "name": "Falcons Hoodie",
+    "type": "hoodie",
+    "price": 40,
+    "image": "./assets/images/falcons-hoodie.png",
+    "description": "Black pullover hoodie with The Falcons logo centered on the chest."
+  },
+  {
+    "id": 4,
+    "name": "Falcons Grey Hoodie",
+    "type": "hoodie",
+    "price": 40,
+    "image": "./assets/images/falcons-grey-hoodie.png",
+    "description": "Heather grey hoodie with 'The Falcons' small red box print on the right chest."
+  },
+  {
+    "id": 5,
+    "name": "Falcons T-Shirt",
+    "type": "shirt",
+    "price": 25,
+    "image": "./assets/images/falcons-shirt.png",
+    "description": "Grey t-shirt featuring The Falcons eagle logo printed on the right chest side."
+  },
+  {
+    "id": 6,
+    "name": "Falcons Supreme Sticker",
+    "type": "sticker",
+    "price": 6,
+    "image": "./assets/images/falcons-supreme-sticker.png",
+    "description": "Rectangular red sticker inspired by the Supreme style, with bold white 'The Falcons' text."
+  },
+  {
+    "id": 7,
+    "name": "Falcons Eagle Sticker",
+    "type": "sticker",
+    "price": 5,
+    "image": "./assets/images/falcons-eagle-sticker.png",
+    "description": "Clean die-cut sticker featuring only The Falcons eagle logo with transparent edges."
+  }
+]
