@@ -1,0 +1,10 @@
+.navbar__brand {
+    width: 55px;
+    height: 55px;
+}
+
+.navbar__brand-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
