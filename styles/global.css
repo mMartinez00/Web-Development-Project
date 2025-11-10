@@ -47,22 +47,6 @@ body {
     object-fit: contain;
 }
 
-.navbar__menu{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.navbar__item {
-    list-style: none;
-    margin: 0 12px;
-}
-
-.navbar__link {
-    text-decoration: none;
-    color: var(--text-color);
-}
-
 /* Footer */
 .footer {
     width: 100%;
@@ -74,18 +58,25 @@ body {
     align-items: center;
 }
 
-.footer__social {
+/* Styling for hover nav/footer menu items*/
+.navbar__menu, .footer__social {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.footer__social-item {
-     list-style: none;
-    margin: 0 12px;
+.navbar__item, .footer__social-item {
+    list-style: none;
+    margin: 0 1rem;
+    transition: transform .3s ease;
 }
 
-.footer__social-link {
+.navbar__link, .footer__social-link {
+    font-size: 1.2rem;
     text-decoration: none;
     color: var(--text-color);
+}
+
+.navbar__item:hover, .footer__social-item:hover {
+    transform: translateY(-2px);
 }
