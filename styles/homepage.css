@@ -1,5 +1,14 @@
 .home {
     border: 1px solid black;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+}
+
+.home__hero {
+    border: 1px solid white;
+}
+
+.home__intro {
+    border: 1px solid green;
 }
