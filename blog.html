@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/blog.css">
   <title>The Falcons Post</title>
 </head>
 <body>
@@ -36,12 +37,12 @@
 </nav>
    
 <main class="main">
-
-  <!-- Blog 1 -->
-  <div class="blog">
+  <section class="blog__wrapper">
+   <!-- Blog 1 -->
+<div class="blog">
     <div class="blog__image-container">
       <img class="blog__image" 
-           src="assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" 
+           src="assets/images/falcons_logo.png" 
            alt="falcons logo"
            width="150" height="150">
     </div>
@@ -65,7 +66,7 @@
   <div class="blog">
     <div class="blog__image-container">
       <img class="blog__image" 
-           src="assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" 
+           src="assets/images/falcons_logo.png"
            alt="falcons logo"
            width="150" height="150">
     </div>
@@ -84,20 +85,24 @@
       </p>
     </div>
   </div>
-
-</main>
-
-
-<section class="blog__update">
+  </section>
+<!-- Stay updated box -->
+<section class="update__wrapper">
+   <div class="update__box">
     <h3 class="update__header">Stay Updated</h3>
+
     <form class="update__form" action="mailto:example@gmail.com" method="post" enctype="text/plain">
       <label class="update__form-label" for="email">Email:</label>
       <input  class="update__form-email" type="email" id="email" name="email" placeholder="example@gmail.com" required>
-      <input class="update__form-submit" type="submit" value="Submit">
+      
+      <div class="update__button">
+       
+        <input class="update__form-submit" type="submit" value="Submit">
+     </div>
     </form>
-  </section>
-
-   
+  </div>
+ </section>
+</main>
 
 <footer class="footer">
     <p class="foot__copy">&copy; The Falcons</p>

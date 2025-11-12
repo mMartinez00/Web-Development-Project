@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/homepage.css">
     <title>The Falcons</title>
 </head>
 <body>
 
 <nav class="navbar">
     <div class="navbar__brand">
-        Logo
+        <img src="./assets/images/falcons_logo.png" alt="Falcons Logo" class="navbar__brand-logo">
     </div>
 
     <ul class="navbar__menu">
@@ -37,27 +38,30 @@
 
 <main class="main home">
     <section class="home__hero">
-        <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" class="home__logo" alt="falcons logo" width="500" height="500">
+        <div class="home__hero-logo-container">
+            <img src="./assets/images/falcons_logo.png" class="home__hero-logo" alt="falcons logo">
+        </div>
     </section>
 
     <section class="home__intro">
         <div class="home__content">
-            <p class="home__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nobis distinctio corporis cumque vel, quam quisquam ipsum pariatur saepe possimus placeat deserunt est. Aliquam eum dolor aut illum obcaecati accusantium ea maxime. Ullam exercitationem incidunt debitis libero rerum inventore veniam.</p>
+            <p class="home__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati laboriosam nihil, sit blanditiis placeat magnam, architecto expedita ab labore tempora et est cupiditate magni illo quos accusantium incidunt maxime doloremque. Necessitatibus, laudantium sapiente modi vel magnam, animi reprehenderit a neque inventore omnis quis repellendus. Perferendis blanditiis unde assumenda dolores accusantium!</p>
 
             <p class="home__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, consequuntur illum, dicta ex officiis provident earum odio deleniti sequi nobis necessitatibus eum quod hic dolor natus maiores? Repellat, consequatur laborum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A quo ea exercitationem beatae fugit ipsam sed harum corrupti eius veritatis dolorum laboriosam ad nemo rem nulla reiciendis iste, molestias et ratione velit quod mollitia corporis! Esse dolores a doloribus eveniet dignissimos magni vitae laudantium magnam quod, enim impedit, odit quia odio dolore voluptatem reprehenderit quasi expedita unde eos minima voluptatum!
             </p>
         </div>
+
+        <div class="home__navigation">
+            <button class="home__navigation-btn">
+                <a href="./about.html" class="home__navigation-link">About</a>
+            </button>
+            <button class="home__navigation-btn">
+                <a href="./blog.html" class="home__navigation-link">Blogs</a>
+            </button>
+         </div>
     </section>
 
-    <div class="home__navigation">
-        <button class="home__navigation-btn">
-            <a href="./about.html" class="home__navigation-link">About</a>
-        </button>
-        <button class="home__navigation-btn">
-            <a href="./blog.html" class="home__navigation-link">Blogs</a>
-        </button>
-    </div>
 </main>
 
 <footer class="footer">
@@ -65,16 +69,16 @@
 
     <ul class="footer__social">
         <li class="footer__social-item">
-            <a class="footer__social-link" href="#">Facebook</a>
+            <a class="footer__social-link" href="#"><i class="fa-brands fa-square-facebook"></i></a>
         </li>
         <li class="footer__social-item">
-            <a class="footer__social-link" href="#">X</a>
+            <a class="footer__social-link" href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
         </li>
         <li class="footer__social-item">
-            <a class="footer__social-link" href="#">Instagram</a>
+            <a class="footer__social-link" href="#"><i class="fa-brands fa-square-instagram"></i></a>
         </li>
         <li class="footer__social-item">
-            <a class="footer__social-link" href="#">TikTok</a>
+            <a class="footer__social-link" href="#"><i class="fa-brands fa-tiktok"></i></a>
         </li>
     </ul>
 </footer>
