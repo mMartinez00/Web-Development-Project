@@ -77,15 +77,20 @@ main {
 .navbar__item, .footer__social-item {
     list-style: none;
     margin: 0 1rem;
-    transition: transform .3s ease;
+    transition: all .3s ease;
 }
 
 .navbar__link, .footer__social-link {
     font-size: 1.2rem;
     text-decoration: none;
     color: var(--text-color);
+    transition: color .6s ease;
 }
 
 .navbar__item:hover, .footer__social-item:hover {
     transform: translateY(-2px);
+}
+
+.navbar__link:hover, .fa-brands:hover {
+    color: var(--secondary-color);
 }

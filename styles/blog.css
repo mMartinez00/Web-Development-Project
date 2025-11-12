@@ -84,17 +84,12 @@
  
  }
 
- .update__button{
-     
-    
- }
-
  .update__form-submit{
 
     border-radius: 5px;
     padding: 4px 8px;
-    background-color: var(--dark-btn-color-grey);
-    color: var(--light-color);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
  }
 
 
