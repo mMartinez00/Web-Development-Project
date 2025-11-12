@@ -3,13 +3,13 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
 :root {
-    --primary-color:#F0350F;
-    --secondary-color:#F8A291;
-    --light-color:#FDEBE7;
-    --dark-color:#6E1807;
-    --dark-btn-color-grey:rgb(93, 92, 92);
-    --text-color:#180502;
-    /* borders */
+    --primary-color: #121212;          /* Matte black background */
+    --secondary-color: #BB2E1F;        /* Falcon red accent */
+    --light-color: #1E1E1E;            /* Slightly lighter black (panels, cards) */
+    --dark-color: #0A0A0A;             /* Deep shadow black */
+    --dark-btn-color-grey: #2C2C2C;    /* Muted matte gray for buttons */
+    --text-color: #E5E5E5;             /* Soft white for readable text */
+    /* Borders and rounding */
     --border-radius: 8px;
 }
 
