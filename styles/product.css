@@ -21,3 +21,15 @@
 .products__filter-group {
     margin: 0 1.4rem;
 }
+
+/* Grid */
+.products__grid {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.products__card {
+    border: 1px solid green;
+}
