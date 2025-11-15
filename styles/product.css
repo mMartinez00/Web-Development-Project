@@ -31,5 +31,25 @@
 }
 
 .products__card {
+    width: 100%;
+    height: 350px;
+    padding: 1rem;
     border: 1px solid green;
+    display: flex;
+    flex-direction: column;
 }
+
+.products__card-info, .products__card-footer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .products__card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
