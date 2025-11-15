@@ -1,0 +1,23 @@
+.products {
+    border: 1px solid white;
+}
+
+.products__filters {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+}
+
+.products__filters-form {
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products__filter-group {
+    margin: 0 1.4rem;
+}
