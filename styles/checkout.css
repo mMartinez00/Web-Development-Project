@@ -35,5 +35,9 @@
 }
 
 .checkout__label {
+    width: 100%;
     border: 1px solid blue;
+}
+.checkout__input, .checkout__select {
+    width: 100%;
 }
