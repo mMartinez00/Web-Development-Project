@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/product.css">
     <title>Shop</title>
 </head>
 <body>
 
 <nav class="navbar">
     <div class="navbar__brand">
-        Logo
+        <img src="./assets/images/falcons_logo.png" alt="Falcons Logo" class="navbar__brand-logo">
     </div>
 
     <ul class="navbar__menu">
@@ -74,27 +75,31 @@
     </section>
 
     <section class="products__grid">
-        <article class="products__card">
-            <div class="products__card-info">
-                <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" class="products__card-image" alt="product" width="100" height="100">
-                <h2 class="product__card-name">Product 1</h2>
-                <p class="product__card-description">Brief Description</p>
+        <article class="products__card" id="1">
+             <div class="products__card-image-container">
+                    <img src="./assets/images/beige_cap.png" class="products__card-image" alt="product">
             </div>
-            <div class="products__card-footer">
-                <p class="products__card-price">$40</p>
-                <button class="products__card-btn">Add to Cart</button>
+            <div class="products__card-info">
+                <h2 class="products__card-name">Beige Cap</h2>
+                <p class="products__card-description">Classic beige cap featuring The Falcons logo on the front.</p>
+                <div class="products__card-footer">
+                    <p class="products__card-price">24.99</p>
+                    <button class="products__card-btn">Add to Cart</button>
+                </div>
             </div>
         </article>
 
-        <article class="products__card">
-            <div class="products__card-info">
-                <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" class="products__card-image" alt="product" width="100" height="100">
-                <h2 class="product__card-name">Product 1</h2>
-                <p class="product__card-description">Brief Description</p>
+          <article class="products__card" id="1">
+             <div class="products__card-image-container">
+                    <img src="./assets/images/beige_cap.png" class="products__card-image" alt="product">
             </div>
-            <div class="products__card-footer">
-                <p class="products__card-price">$40</p>
-                <button class="products__card-btn">Add to Cart</button>
+            <div class="products__card-info">
+                <h2 class="products__card-name">Beige Cap</h2>
+                <p class="products__card-description">Classic beige cap featuring The Falcons logo on the front.</p>
+                <div class="products__card-footer">
+                    <p class="products__card-price">24.99</p>
+                    <button class="products__card-btn">Add to Cart</button>
+                </div>
             </div>
         </article>
     </section>
@@ -105,16 +110,16 @@
 
     <ul class="footer__social">
         <li class="footer__social-item">
-            <a class="footer__social-link" href="#">Facebook</a>
+            <a class="footer__social-link" href="#"><i class="fa-brands fa-square-facebook"></i></a>
         </li>
         <li class="footer__social-item">
-            <a class="footer__social-link" href="#">X</a>
+            <a class="footer__social-link" href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
         </li>
         <li class="footer__social-item">
-            <a class="footer__social-link" href="#">Instagram</a>
+            <a class="footer__social-link" href="#"><i class="fa-brands fa-square-instagram"></i></a>
         </li>
         <li class="footer__social-item">
-            <a class="footer__social-link" href="#">TikTok</a>
+            <a class="footer__social-link" href="#"><i class="fa-brands fa-tiktok"></i></a>
         </li>
     </ul>
 </footer>

@@ -1,14 +1,19 @@
 .home {
     border: 1px solid black;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.home__hero {
+.home__hero, .home__intro {
     flex: 1;
-    border: 1px solid white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .home__hero-logo-container {
     width: 100%;
@@ -16,53 +21,53 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: .8;
 }
 
 .home__hero-logo {
-    width: 80%;
-    height: 80%;
-    background-color: var(--light-color);
+    width: 85%;
+    height: auto;
     object-fit: contain;
-    border: 1px solid orange;
+    background-color: var(--dark-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
     border-radius: 50%;
-    box-shadow: 2px 2px 4px #000;
-}
-
-.home__intro {
-    padding: 1rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--light-color);
-    border: 1px solid green;
 }
 
 .home__content {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     margin-bottom: 1rem;
-    border: 1px solid black;
 }
 
 .home__text {
-    margin: 1rem 0;
+    margin: 2rem 0;
+    line-height: 1.8;
 }
 
 .home__navigation {
-    border: 1px solid blue;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .home__navigation-btn {
+    padding: .6rem 1.2rem;
     margin: 0 1rem;
-    padding: 6px 10px;
-    background-color: var(  --dark-btn-color-grey);
+    background-color: var(--dark-btn-color-grey);
+    border: .5px solid rgba(0,0,0,0.3);
+    border-radius: var(--border-radius-md);
+    transition: all .3s ease-in;
+    cursor: pointer;
 }
 
 .home__navigation-link {
-    color: var(--light-color);
+    color: var(--text-color);
     text-decoration: none;
     font-family: inherit;
+}
+
+.home__navigation-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 2px 2px var(--secondary-color);
 }

@@ -10,7 +10,9 @@
     --dark-btn-color-grey: #2C2C2C;    /* Muted matte gray for buttons */
     --text-color: #E5E5E5;             /* Soft white for readable text */
     /* Borders and rounding */
-    --border-radius: 8px;
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
 }
 
 * {
