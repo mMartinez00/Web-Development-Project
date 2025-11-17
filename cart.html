@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/cart.css">
     <title>Cart</title>
 </head>
 <body>
@@ -36,19 +37,22 @@
 </nav>
 
 
-<main class="main">
-    <section class="cart">
+<main class="cart">
+    <section class="cart__content">
         <h1 class="cart__title">Your Cart</h1>
 
         <div class="cart__item">
             <div class="cart__item-main">
                 <div class="cart__item-media">
-                    <img class="cart__item-image" src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="product image" width="150" height="150">
+                    <img class="cart__item-image" src="./assets/images/beige_cap.png"
+                        alt="product image" width="150" height="150">
                 </div>
 
                 <div class="cart__item-details">
-                    <h2 class="cart__item-title">Product Name</h2>
-                    <p class="cart__item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure exercitationem dolore sunt commodi, minima reprehenderit!</p>
+                    <h2 class="cart__item-title">Beige Cap</h2>
+                    <p class="cart__item-desc">
+                        Classic beige cap featuring The Falcons logo on the front.
+                    </p>
 
                     <div class="cart__item-qty">
                         <button class="cart__item-qty-btn" aria-label="Decrease quantity">-</button>
@@ -59,83 +63,11 @@
             </div>
 
             <div class="cart__item-side">
-                <div class="cart__item-remove">
-                    <button class="cart__item-remove-btn" aria-label="Remove item">Trash</button>
-                </div>
+                <button class="cart__item-remove-btn" aria-label="Remove item">Trash</button>
                 <p class="cart__item-price">$40</p>
             </div>
         </div>
 
-        <div>
-            <div>
-                <div>
-                    <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="product image" width="150" height="150">
-                </div>
-
-                <div>
-                    <h2>Product Name</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure exercitationem dolore sunt commodi, minima reprehenderit!</p>
-
-                    <div>
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <button>Trash</button>
-                </div>
-                <p>$40</p>
-            </div>
-        </div>
-
-
-        <div>
-            <div>
-                <div>
-                    <img src="./assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="product image" width="150" height="150">
-                </div>
-
-                <div>
-                    <h2>Product Name</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure exercitationem dolore sunt commodi, minima reprehenderit!</p>
-
-                    <div>
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <button>Trash</button>
-                </div>
-                <p>$40</p>
-            </div>
-        </div>
-    </section>
-
-    <aside class="cart__summary">
-        <div class="cart__summary-box">
-            <h2 class="cart__summary-title">Cart Summary</h2>
-
-            <p class="cart__summary-row">Subtotal: <span class="cart__summary-value">$35</span></p>
-            <p class="cart__summary-row">Shipping: <span class="cart__summary-value">$0</span></p>
-            <p class="cart__summary-row">Discount: <span class="cart__summary-value">$0</span></p>
-            <p class="cart__summary-row">Tax: <span class="cart__summary-value">0</span></p>
-        </div>
-        <hr class="cart__summary-divider">
-        <div class="cart__summary-total-row">
-            <p class="cart__summary-total">Total: <span class="cart__summary-value">$35</span></p>
-            <button class="cart__summary-checkout-btn"><a href="./checkout.html">Check Out</a></button>
-        </div>
-    </aside>
-</main>
 
 <footer class="footer">
     <p class="foot__copy">&copy; The Falcons</p>
