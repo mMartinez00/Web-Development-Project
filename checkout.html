@@ -82,7 +82,7 @@
                     </label>
 
                     <label for="zipcode" class="checkout__label">
-                        Zip Code: <input type="text" name="zipcode" id="zipcode" class="checkout_input checkout__select--zipcode">
+                        Zip Code: <input type="text" name="zipcode" id="zipcode" class="checkout__input checkout__select--zipcode">
                     </label>
                 </div>
 
@@ -97,6 +97,25 @@
                     </label>
                 </div>
             </form>
+
+            <h2 class="checkout__subtitle">Payment</h2>
+            <div class="checkout__form-group checkout__form-group--payment">
+                <label for="name-on-card" class="checkout__label">
+                    Name on Card: <input type="text" id="name-on-card" class="checkout__input checkout__input--name-on-card">
+                </label>
+
+                <label for="card_number" class="checkout__label">
+                    Card Number: <input type="text" name="card_number" id="card_number" class="checkout__input checkout__input--card-number">
+                </label>
+
+                <label for="exp_date" class="checkout__label">
+                    Expiration Date: <input type="month" name="exp_date" id="exp_date" class="checkout__input checkout__input--exp-date">
+                </label>
+
+                <label for="cvv" class="checkout__label">
+                    CVV: <input type="text" inputmode="numeric" name="cvv" id="cvv" class="checkout__input checkout__input--cvv">
+                </label>
+            </div>
         </div>
     </section>
 

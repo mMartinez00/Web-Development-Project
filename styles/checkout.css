@@ -13,7 +13,7 @@
 }
 
 .checkout__title {
-    margin-bottom: 1rem;
+    margin-bottom: .8rem;
 }
 
 .checkout__form-wrapper {
@@ -40,4 +40,5 @@
 }
 .checkout__input, .checkout__select {
     width: 100%;
+    border-radius: var(--border-radius-sm);
 }
