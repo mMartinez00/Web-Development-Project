@@ -38,14 +38,13 @@
 
 <main class="main checkout">
     <section class="checkout__section">
-        <h1 class="checkout__title">Check Out</h1>
-
         <div class="checkout__form-wrapper">
+            <h1 class="checkout__title">Check Out</h1>
             <form class="checkout__form" action="">
                 <div class="checkout__form-group checkout__form-group--name">
 
                     <label for="firstname" class="checkout__label">
-                        First Name:
+                        First Name: <br>
                             <input
                             type="text"
                             name="firstname"
@@ -55,7 +54,7 @@
                     </label>
 
                     <label for="lastname" class="checkout__label">
-                        Last Name:
+                        Last Name: <br>
                             <input
                             type="text"
                             name="lastname"
@@ -87,20 +86,22 @@
                     </label>
                 </div>
 
+                <h2 class="checkout__subtitle">Contact Information</h2>
                 <div class="checkout__form-group checkout__form-group--contact">
-                    <h2 class="checkout__subtitle">Contact Information</h2>
-                    <label for="contact" class="checkout__contact">
-                        Email: <input type="email" class="checkout__input checkout__input--email"> <br>
+                    <label for="contact" class="checkout__label">
+                        Email: <input type="email" id="contact" class="checkout__input checkout__input--email"> <br>
                     </label>
 
-                    <label for="phone" class="checkout__phone">
+                    <label for="phone" class="checkout__label">
                         Phone Number: <input type="tel" name="phone" id="phone" class="checkout__input checkout__input--phone">
                     </label>
                 </div>
             </form>
         </div>
+    </section>
 
-        <aside class="checkout__summary">
+    <!-- Cart Summary -->
+      <aside class="checkout__summary">
             <div class="checkout__summary-details">
                 <h2 class="checkout__summary-title">Cart Summary</h2>
 
@@ -117,7 +118,6 @@
                 <button class="checkout__btn">Place Order</button>
             </div>
         </aside>
-    </section>
 </main>
 
 <footer class="footer">
