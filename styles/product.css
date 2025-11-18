@@ -62,7 +62,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
     border-radius: var(--border-radius-lg);
