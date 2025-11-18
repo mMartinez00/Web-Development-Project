@@ -8,6 +8,13 @@
     gap: 2rem;
 }
 
+.cart__section {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
 .cart__content {
     display: flex;
     flex-direction: column;
@@ -120,12 +127,12 @@
 /* Cart Summary */
 .cart__summary {
     align-self: flex-start;
-    border-radius: var(--border-radius-md);
 }
 
 .cart__summary-box {
     background-color: var(--light-color);
     padding: 1.5rem 1.2rem;
+    border-radius: var(--border-radius-md);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
