@@ -1,5 +1,5 @@
 .checkout {
-     border: 1px solid red;
+    border: 1px solid red;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
@@ -9,7 +9,11 @@
 }
 
 .checkout__section {
-    border: 1px solid red;
+    border: 1px solid green;
+    background-color: var(--light-color);
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    border-radius: var(--border-radius-lg);
 }
 
 .checkout__title {
