@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/checkout.css">
     <title>Check Out</title>
 </head>
 <body>
 
 <nav class="navbar">
     <div class="navbar__brand">
-        Logo
+        <img src="./assets/images/falcons_logo.png" alt="Falcons Logo" class="navbar__brand-logo">
     </div>
 
     <ul class="navbar__menu">
@@ -37,9 +38,8 @@
 
 <main class="main checkout">
     <section class="checkout__section">
-        <h1 class="checkout__title">Check Out</h1>
-
         <div class="checkout__form-wrapper">
+            <h1 class="checkout__title">Check Out</h1>
             <form class="checkout__form" action="">
                 <div class="checkout__form-group checkout__form-group--name">
 
@@ -70,11 +70,11 @@
                     </label>
 
                     <label for="apt" class="checkout__label">
-                        Apt: <input type="text" name="apt" id="address" class="checkout__input checkout__input--apt">
+                        Apt: <input type="text" name="apt" id="apt" class="checkout__input checkout__input--apt">
                     </label>
                         
                     <label for="state" class="checkout__label">
-                        State: <select name="state" id="address" class="checkout__select checkout__select--state">
+                        State: <select name="state" id="state" class="checkout__select checkout__select--state">
                                     <option value="ny">NY</option>
                                     <option value="ny">NJ</option>
                                     <option value="ny">CA</option>
@@ -82,26 +82,47 @@
                     </label>
 
                     <label for="zipcode" class="checkout__label">
-                        Zip Code: <input type="text" name="zipcode" id="address" class="checkout_input checkout__select--zipcode">
+                        Zip Code: <input type="text" name="zipcode" id="zipcode" class="checkout__input checkout__select--zipcode">
                     </label>
                 </div>
 
+                <h2 class="checkout__subtitle">Contact Information</h2>
                 <div class="checkout__form-group checkout__form-group--contact">
-                    <h2 class="checkout__subtitle">Contact Information</h2>
-                    <label for="contact" class="checkout__contact">
-                        Email: <input type="email" class="checkout__input checkout__input--email"> <br>
+                    <label for="contact" class="checkout__label">
+                        Email: <input type="email" id="contact" class="checkout__input checkout__input--email">
                     </label>
 
-                    <label for="phone" class="checkout__phone">
+                    <label for="phone" class="checkout__label">
                         Phone Number: <input type="tel" name="phone" id="phone" class="checkout__input checkout__input--phone">
                     </label>
                 </div>
             </form>
-        </div>
 
-        <aside class="checkout__summary">
+            <h2 class="checkout__subtitle">Payment</h2>
+            <div class="checkout__form-group checkout__form-group--payment">
+                <label for="name-on-card" class="checkout__label">
+                    Name on Card: <input type="text" id="name-on-card" class="checkout__input checkout__input--name-on-card">
+                </label>
+
+                <label for="card_number" class="checkout__label">
+                    Card Number: <input type="text" name="card_number" id="card_number" class="checkout__input checkout__input--card-number">
+                </label>
+
+                <label for="exp_date" class="checkout__label">
+                    Expiration Date: <input type="month" name="exp_date" id="exp_date" class="checkout__input checkout__input--exp-date">
+                </label>
+
+                <label for="cvv" class="checkout__label">
+                    CVV: <input type="text" inputmode="numeric" name="cvv" id="cvv" class="checkout__input checkout__input--cvv">
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Summary -->
+      <aside class="checkout__summary">
+          <h2 class="checkout__summary-title">Cart Summary</h2>
             <div class="checkout__summary-details">
-                <h2 class="checkout__summary-title">Cart Summary</h2>
 
                 <p class="checkout__summary-item">Subtotal: <span class="checkout__summary-value">$35</span></p>
                 <p class="checkout__summary-item">Shipping: <span class="checkout__summary-value">$0</span></p>
@@ -116,7 +137,6 @@
                 <button class="checkout__btn">Place Order</button>
             </div>
         </aside>
-    </section>
 </main>
 
 <footer class="footer">
@@ -124,20 +144,19 @@
 
     <ul class="footer__social">
         <li class="footer__social-item">
-            <a class="footer__social-link" href="#">Facebook</a>
+            <a class="footer__social-link" href="#"><i class="fa-brands fa-square-facebook"></i></a>
         </li>
         <li class="footer__social-item">
-            <a class="footer__social-link" href="#">X</a>
+            <a class="footer__social-link" href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
         </li>
         <li class="footer__social-item">
-            <a class="footer__social-link" href="#">Instagram</a>
+            <a class="footer__social-link" href="#"><i class="fa-brands fa-square-instagram"></i></a>
         </li>
         <li class="footer__social-item">
-            <a class="footer__social-link" href="#">TikTok</a>
+            <a class="footer__social-link" href="#"><i class="fa-brands fa-tiktok"></i></a>
         </li>
     </ul>
 </footer>
-
     
 </body>
 </html>

@@ -1,0 +1,199 @@
+/* Page layout (same structure as cart) */
+
+.checkout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+/* Left column: form card */
+.checkout__section {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.checkout__title {
+    margin-bottom: 1rem;
+}
+
+.checkout__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.checkout__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.checkout__subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+}
+
+
+/* Base form group layout */
+
+.checkout__form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+/* Name group: 2 equal columns */
+
+.checkout__form-group--name .checkout__label {
+    flex: 1 1 0;          /* share row evenly */
+}
+
+
+/* Address group */
+/* Street full width, others smaller on next row */
+
+.checkout__form-group--address .checkout__label:nth-child(1) {
+    flex: 1 1 100%;       /* full row for Street Address */
+}
+
+.checkout__form-group--address .checkout__label:nth-child(n+2) {
+    flex: 1 1 0;          /* Apt, State, Zip share row */
+    min-width: 120px;     /* prevents them from getting too tiny */
+}
+
+
+/*  Contact group: 2 equal columns  */
+
+.checkout__form-group--contact .checkout__label {
+    flex: 1 1 0;          /* Email + Phone 50/50 */
+}
+
+
+/*  Payment group: 2 x 2 grid  */
+
+.checkout__form-group--payment {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+/* Stack payment fields on small screens */
+@media (max-width: 700px) {
+    .checkout__form-group--payment {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Labels & fields */
+
+.checkout__label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Inputs and selects */
+.checkout__input,
+.checkout__select {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    background-color: var(--dark-btn-color-grey);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius-sm);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+/* Focus state */
+.checkout__input:focus,
+.checkout__select:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(187, 46, 31, 0.4);
+}
+
+
+/* ===== Responsive: stack form + summary on mobile ===== */
+
+@media (max-width: 900px) {
+    .checkout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Checkout Summary */
+.checkout__summary {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    align-self: start;
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.checkout__summary-title {
+    margin-bottom: 1rem;
+}
+
+.checkout__summary-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.checkout__summary-item, .checkout__total-text {
+    display:inline-flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.checkout__summary-divider {
+    margin: 1.2rem 0;
+    border: none;
+    border-top: 1px solid var(--text-color);
+}
+
+.checkout__summary-total {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Button */
+.checkout__btn {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: none;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius-md);
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.checkout__btn:hover {
+    opacity: 0.9;
+}
+
+
+/* =========================
+   Responsive Layout
+   ========================= */
+
+@media (max-width: 900px) {
+    .checkout {
+        grid-template-columns: 1fr;
+    }
+}
