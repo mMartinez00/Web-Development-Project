@@ -1,0 +1,18 @@
+.contact__logo {
+      width: 35%;
+      height: 35%;
+    object-fit: contain;
+    background-color: var(--light-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
+    border-radius: 50%;
+}
+
+
+.contact__header {
+  text-align: center;
+}
+
+.contact__logo {
+  margin: 1rem auto 0 auto; /* centers it */
+}
