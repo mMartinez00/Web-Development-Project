@@ -24,6 +24,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    
   }
  
 
@@ -37,19 +38,23 @@
 
 .about__intro-header {
   margin-bottom: 0.75rem;
+
 }
 
 .about__title {
   font-size: 2rem;
   margin: 0;
+ text-align: center;
 }
 
 .about__intro-text {
   line-height: 1.6;
+  
 }
 
 .about__description {
   margin: 0;
+  color: black;
 }
 
 .about__philosophy {
