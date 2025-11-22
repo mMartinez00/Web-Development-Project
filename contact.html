@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/contact.css">
   <title>Contact · The Falcons</title>
 </head>
 <body>
@@ -38,47 +39,67 @@
   
 
   <main class="main">
-    <section class="contact">
-      <div class ="contact_info">
-      <header class="contact__header">
-      <h1 class="contact__title">Get in Touch</h1>
-      <img src="assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="Falcons_logo" class="contact__logo" width="250" height="250">
-       
-      </header>
-       <p class="contact__intro">
-        At The Falcons, we have a clear vision: to personalize the best experience for our clients.
-       </p>
-        
-       <p class="contact__number">(888) 888-8888></p>
-       <p class="contact__email"> thefalconsmail@falcons.com</p>
-       <p class="contact__location">New york, New york</p>
-    
-    </div>
+  <section class="contact">
+
+    <!--get in touch area finish at the first closing div-->
+
+<div class="contact__info">
+  <header class="contact__header">
+    <h1 class="contact__title">Get in Touch!</h1>
+    <img class="contact__logo" src="assets/images/falcons_logo.png" alt="falcons logo">
+  </header>
+
+  <p class="contact__intro">
+    At The Falcons, we have a clear vision: to personalize the best experience for our clients.
+  </p>
+
+  <p class="contact__number">(888) 888-8888</p>
+  <p class="contact__email">thefalconsmail@falcons.com</p>
+  <p class="contact__location">New York, New York</p>
+</div>
 
 
-     
-      <div class="contact__form-container">
-      <form class="contact__form" action="mailto:yourname@example.com" method="post" enctype="text/plain">
+    <!-- Contact form -->
+    <div class="contact__form-container">
+      <form
+        class="contact__form"
+        action="mailto:yourname@example.com"
+        method="post"
+        enctype="text/plain"
+      >
         <div class="contact__field">
           <label class="contact__label" for="name">Full Name:</label>
           <input class="contact__input" type="text" id="name" name="Name" required>
         </div>
+
         <div class="contact__field">
           <label class="contact__label" for="email">Email:</label>
           <input class="contact__input" type="email" id="email" name="Email" required>
         </div>
+
         <div class="contact__field">
           <label class="contact__label" for="message">Message:</label>
-          <textarea class="contact__textarea" id="message" name="Message" rows="5" required></textarea>
+          <textarea
+            class="contact__textarea"
+            id="message"
+            name="Message"
+            rows="5"
+            required
+          ></textarea>
         </div>
+
         <div class="contact__actions">
-          <input class="button button--primary contact__submit" type="submit" value="Send">
+          <input
+            class="button button--primary contact__submit"
+            type="submit"
+            value="Send"
+          >
         </div>
       </form>
-      </div>
     </div>
-    </section>
-  </main>
+
+  </section>
+</main>
 
   <footer class="footer">
     <p class="foot__copy">&copy; The Falcons</p>
