@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/login.css">
-    <title>LOGIN TO THE FALCONS</title>
+    <title>Login To The Falcons</title>
 </head>
 <body>
 
@@ -101,22 +101,8 @@
         <div class="auth__overlay-container">
             <div class="auth__overlay">
 
-                <!-- LEFT SIDE — UPDATED AS REQUESTED -->
-                <div class="auth__overlay-panel auth__overlay-panel--left">
-                    <h1 class="auth__overlay-title">The Falcons welcomes you!</h1>
-                    <p class="auth__overlay-text">
-                        Don’t have an account? Sign up to access exclusive Falcons merch and updates.
-                    </p>
-                    <button
-                        class="auth__btn auth__btn--ghost"
-                        id="auth-signup-toggle"
-                    >
-                        Sign Up
-                    </button>
-                </div>
 
-                <!-- RIGHT SIDE (Now only for switching back to sign-in mode) -->
-                <div class="auth__overlay-panel auth__overlay-panel--right">
+                <div class="auth__overlay-panel auth__overlay-panel--left">
                     <h1 class="auth__overlay-title">Welcome Back!</h1>
                     <p class="auth__overlay-text">
                         Already have an account? Sign in to continue your Falcons journey.
@@ -126,6 +112,19 @@
                         id="auth-signin-toggle"
                     >
                         Sign In
+                    </button>
+                </div>
+
+                 <div class="auth__overlay-panel auth__overlay-panel--right">
+                    <h1 class="auth__overlay-title">The Falcons welcomes you!</h1>
+                    <p class="auth__overlay-text">
+                        Don’t have an account? Sign up to access exclusive Falcons merch and updates.
+                    </p>
+                    <button
+                        class="auth__btn auth__btn--ghost"
+                        id="auth-signup-toggle"
+                    >
+                        Sign Up
                     </button>
                 </div>
 
@@ -153,7 +152,8 @@
         </li>
     </ul>
 </footer>
-    
+
+<script src="./scripts/login.js"></script>
 
 </body>
 </html>
