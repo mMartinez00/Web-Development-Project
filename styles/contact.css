@@ -1,15 +1,11 @@
-
-
 .main {
   padding: 1.5rem;
   border-radius: var(--border-radius-lg);
-  /* no background here so the body black shows through */
 }
 
 
 
 .contact {
-  
   display: flex;
   gap: 2rem;
   justify-content: center;
@@ -26,7 +22,6 @@
   flex: 1;
   min-width: 400px;
   max-width: none;
-
   padding: 1.5rem;
   border-radius: var(--border-radius-lg);
   background-color: var(--light-color);
@@ -35,12 +30,7 @@
 
 
 .contact__info {
-
   text-align: center;
-}
-
-.contact__form-container {
-  
 }
 
 /* Contact info card content */
@@ -67,13 +57,20 @@
 
 .contact__intro {
   margin: 1rem 0;
-  line-height: 1.6;
+  line-height: 1.2;
+  font-size: 1.4rem;
 }
 
 .contact__number,
 .contact__email,
 .contact__location {
-  margin: 0.25rem 0;
+  text-align: left;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+
+.fa-mobile, .fa-envelope, .fa-location-pin {
+  color: var(--secondary-color);
 }
 
 /* Contact form card content */
@@ -84,12 +81,9 @@
   padding: 1rem;
   background-color: var(--light-color);
   border-radius: var(--border-radius-lg);
-
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
-  
 }
 
 .contact__field {
@@ -108,8 +102,10 @@
 .contact__textarea {
   width: 100%;
   padding: 0.6rem 0.75rem;
-  border-radius: 0.5rem;
-  border: 1px solid #ccc;
+  background-color: var(--dark-btn-color-grey);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius-sm);
+  color: var(--text-color);
   font: inherit;
 }
 
@@ -177,19 +173,4 @@
 
 .button.button--primary.contact__submit {
     opacity: 0.9;
-}
-
-.contact__field{
-    
-}
-
-
-
-.contact__label{
-
-}
-
-
-.contact__textarea{
-
 }

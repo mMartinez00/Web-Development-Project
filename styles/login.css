@@ -199,10 +199,6 @@
 
 /* Overlay background */
 .auth__overlay {
-    /* background: linear-gradient(to right, var(--dark-color), var(--primary-color));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 0; */
     background-color: var(--secondary-color);
     color: var(--text-color);
     position: relative;
