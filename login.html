@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale">
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/login.css">
     <title>LOGIN TO THE FALCONS</title>
 </head>
 <body>
@@ -39,39 +40,112 @@
 
 
 
-    <main class="main">
-    <form class="form"> 
-      <div class="form__logo-box" style="border: 1px solid black;">
-        <div class="form__image-media">
-          <img class="form__image-logo" src="assets/images/ChatGPT Image Oct 13, 2025, 08_34_48 PM.png" alt="falcons logo"
-      width= "200" height= "200">  
-        </div>
-        
-       <div class="form__heading">
-           <h1> THE FALCONS WELCOMES YOU! </h1>
-        <h3>Dont have an account? sign in!</h3>
-        <div class="form__button">
-           <button class="form__button-singup">Sign up</button>
-           </div>
+<h2 class="auth__heading">Account Access</h2>
+
+<main class="main auth">
+    <section class="auth__container" id="auth-container">
+
+        <!-- Sign Up Panel -->
+        <div class="auth__panel auth__panel--signup">
+            <form class="auth__form auth__form--signup" action="#">
+                <h1 class="auth__title">Create Account</h1>
+
+                <div class="auth__social">
+                    <a href="#" class="auth__social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="auth__social-link">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                    <a href="#" class="auth__social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+                <span class="auth__subtitle">
+                    or use your email to join The Falcons Store
+                </span>
+
+                <input class="auth__input" type="text" placeholder="Name" />
+                <input class="auth__input" type="email" placeholder="Email" />
+                <input class="auth__input" type="password" placeholder="Password" />
+
+                <button class="auth__btn auth__btn--primary">Sign Up</button>
+            </form>
         </div>
 
-          
-      <div class="username">
-        <label class="username__label" for="Username">Username</label>
-        <input class= "username__input" type="text" id="Username" name="Username" required>
-        </div>
-        
-        <div class="username__password">
-        <label class="password__label"for="Passoword">Password</label>
-        <input classe="password__input" type="password" id="Password" name="Password" required>
+        <!-- Sign In Panel -->
+        <div class="auth__panel auth__panel--signin">
+            <form class="auth__form auth__form--signin" action="#">
+                <h1 class="auth__title">Sign In</h1>
+
+                <div class="auth__social">
+                    <a href="#" class="auth__social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="auth__social-link">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                    <a href="#" class="auth__social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+                <span class="auth__subtitle">or use your Falcons account</span>
+
+                <input class="auth__input" type="email" placeholder="Email" />
+                <input class="auth__input" type="password" placeholder="Password" />
+
+                <a href="#" class="auth__link auth__link--forgot">Forgot your password?</a>
+
+                <button class="auth__btn auth__btn--primary">Sign In</button>
+            </form>
         </div>
 
-        <div class="username__button">
-        <button class="username__button-btn" type ="submit">Submit</button>
+        <!-- Overlay -->
+        <div class="auth__overlay-container">
+            <div class="auth__overlay">
+
+                <!-- LEFT SIDE — UPDATED AS REQUESTED -->
+                <div class="auth__overlay-panel auth__overlay-panel--left">
+                    <h1 class="auth__overlay-title">The Falcons welcomes you!</h1>
+                    <p class="auth__overlay-text">
+                        Don’t have an account? Sign up to access exclusive Falcons merch and updates.
+                    </p>
+                    <button
+                        class="auth__btn auth__btn--ghost"
+                        id="auth-signup-toggle"
+                    >
+                        Sign Up
+                    </button>
+                </div>
+
+                <!-- RIGHT SIDE (Now only for switching back to sign-in mode) -->
+                <div class="auth__overlay-panel auth__overlay-panel--right">
+                    <h1 class="auth__overlay-title">Welcome Back!</h1>
+                    <p class="auth__overlay-text">
+                        Already have an account? Sign in to continue your Falcons journey.
+                    </p>
+                    <button
+                        class="auth__btn auth__btn--ghost"
+                        id="auth-signin-toggle"
+                    >
+                        Sign In
+                    </button>
+                </div>
+
+            </div>
         </div>
 
-    </form>
-  </main>
+    </section>
+</main>
+
+<footer class="footer">
+    <p class="footer__text">
+        Made for <span class="footer__brand">The Falcons</span> merch site.
+    </p>
+</footer>
+
     
     
    <footer class="footer">
