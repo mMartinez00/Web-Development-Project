@@ -1,0 +1,266 @@
+/* Layout for the auth page */
+.main.auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+/* Main auth card */
+.auth__container {
+    background-color: #fff;
+    border-radius: var(--border-radius-lg);
+    box-shadow:
+        0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+/* Panels (left = sign in, right = sign up) */
+.auth__panel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transition: all 0.6s ease-in-out;
+}
+
+/* Sign-in panel (initially visible) */
+.auth__panel--signin {
+    left: 0;
+    z-index: 2;
+}
+
+/* When container is in "right-panel-active" state, move sign-in panel right */
+.auth__container.right-panel-active .auth__panel--signin {
+    transform: translateX(100%);
+}
+
+/* Sign-up panel (initially hidden) */
+.auth__panel--signup {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+/* Show sign-up when container is active */
+.auth__container.right-panel-active .auth__panel--signup {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: auth-show 0.6s;
+}
+
+@keyframes auth-show {
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+/* Forms */
+.auth__form {
+    background-color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 50px;
+    height: 100%;
+    text-align: center;
+}
+
+/* Titles & text */
+.auth__title {
+    font-weight: bold;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.auth__subtitle {
+    font-size: 12px;
+    color: var(--text-color);
+    margin-top: 0.75rem;
+}
+
+/* Inputs */
+.auth__input {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    margin: 8px 0;
+    background-color: var(--dark-btn-color-grey);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius-sm);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.auth__input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(187, 46, 31, 0.4);
+}
+
+/* Links */
+.auth__link {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 15px 0;
+}
+
+/* Social icons container */
+.auth__social {
+    margin: 1rem 0;
+}
+
+.auth__social-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Buttons */
+.auth__btn {
+    border-radius: var(--border-radius-md);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition:
+        transform 80ms ease-in,
+        background-color 150ms ease-in,
+        border-color 150ms ease-in,
+        color 150ms ease-in;
+}
+
+/* Primary buttons (solid) */
+.auth__btn--primary {
+    border: 1px solid var(--primary-color);
+    background-color: var(--dark-btn-color-grey);
+    color: var(--text-color);
+}
+
+.auth__btn--primary:active {
+    transform: scale(0.95);
+}
+
+/* Ghost button (overlay buttons) */
+.auth__btn--ghost {
+    border: 1px solid var(--light-color);
+    background-color: var(--dark-btn-color-grey);
+    color: var(--text-color);
+}
+
+.auth__btn--ghost:active {
+    transform: scale(0.95);
+}
+
+/* Remove default focus outline but keep transform */
+.auth__btn:focus {
+    outline: none;
+}
+
+/* Overlay container (right side half) */
+.auth__overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+/* Move overlay container when active */
+.auth__container.right-panel-active .auth__overlay-container {
+    transform: translateX(-100%);
+}
+
+/* Overlay background */
+.auth__overlay {
+    /* background: linear-gradient(to right, var(--dark-color), var(--primary-color));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0; */
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Slide overlay background when active */
+.auth__container.right-panel-active .auth__overlay {
+    transform: translateX(50%);
+}
+
+/* Overlay panels (left / right messages) */
+.auth__overlay-panel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 40px;
+    text-align: center;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.auth__overlay-panel--left {
+    transform: translateX(-20%);
+}
+
+.auth__container.right-panel-active .auth__overlay-panel--left {
+    transform: translateX(0);
+}
+
+.auth__overlay-panel--right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.auth__container.right-panel-active .auth__overlay-panel--right {
+    transform: translateX(20%);
+}
+
+/* Overlay text */
+.auth__overlay-title {
+    font-weight: bold;
+    margin: 0;
+}
+
+.auth__overlay-text {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
