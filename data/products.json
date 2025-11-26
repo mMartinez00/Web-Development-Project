@@ -8,76 +8,76 @@
     "image": "./assets/images/beige_cap.png",
     "alt": "Beige cap with The Falcons logo"
   },
-  {
+   {
     "id": 2,
-    "name": "Rectangular Sticker",
-    "description": "Rectangular sticker with The Falcons branding, perfect for laptops and notebooks.",
-    "price": 4.99,
-    "category": "sticker",
-    "image": "./assets/images/rect_sticker.png",
-    "alt": "Rectangular Falcons sticker"
-  },
-  {
-    "id": 3,
     "name": "Supreme-Style Sticker",
     "description": "Bold, Supreme-inspired sticker featuring 'The Falcons' wordmark.",
     "price": 5.99,
     "category": "sticker",
-    "image": "./assets/images/supreme_sticker.png",
+    "image": "./assets/images/rect_sticker.png",
     "alt": "Supreme-style The Falcons sticker"
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "Eagle Logo Sticker",
     "description": "Die-cut sticker of The Falcons eagle logo for a clean, minimal look.",
     "price": 5.49,
     "category": "sticker",
-    "image": "./assets/images/eagle_sticker.png",
+    "image": "./assets/images/falcon_sticker.png",
     "alt": "Eagle logo sticker"
   },
   {
-    "id": 5,
-    "name": "Blue Hoodie - Eagle Logo",
+    "id": 4,
+    "name": "Grey Falcons T-Shirt",
     "description": "Blue hoodie with The Falcons eagle logo on the front.",
     "price": 49.99,
     "category": "hoodie",
-    "image": "./assets/images/blue_hoodie_eagle.png",
-    "alt": "Blue hoodie with eagle logo"
+    "image": "./assets/images/grey_tshirt.png",
+    "alt": "Grey T-shirt with The Falcons eagle logo printed on the right chest."
   },
   {
-    "id": 6,
+    "id": 5,
     "name": "Black Hoodie - The Falcons",
     "description": "Black hoodie with 'The Falcons' text across the chest.",
     "price": 52.99,
     "category": "hoodie",
-    "image": "./assets/images/black_hoodie_falcons.png",
+    "image": "./assets/images/black_hoodie.png",
     "alt": "Black hoodie with The Falcons text"
   },
   {
-    "id": 7,
+    "id": 6,
     "name": "Grey Hoodie - Chest Print",
     "description": "Grey hoodie with a small 'The Falcons' chest print on the right side.",
     "price": 52.99,
     "category": "hoodie",
-    "image": "./assets/images/grey_hoodie_chest.png",
+    "image": "./assets/images/grey_hoodie.png",
     "alt": "Grey hoodie with small The Falcons chest print"
   },
   {
-    "id": 8,
-    "name": "Falcons Eagle T-Shirt",
-    "description": "T-shirt with The Falcons eagle logo printed on the right chest.",
+    "id": 7,
+    "name": "Black Falcons Eagle T-Shirt",
+    "description": "Black T-shirt with The Falcons logo.",
     "price": 29.99,
     "category": "tshirt",
-    "image": "./assets/images/eagle_tshirt.png",
-    "alt": "T-shirt with eagle logo on right chest"
+    "image": "./assets/images/black_tshirt.png",
+    "alt": "Black T-shirt with eagle logo"
   },
   {
-    "id": 9,
+    "id": 8,
     "name": "Falcons Coffee Mug",
     "description": "Ceramic coffee mug featuring The Falcons logo, ideal for daily use.",
     "price": 14.99,
     "category": "mug",
-    "image": "./assets/images/falcons_mug.png",
+    "image": "./assets/images/white_coffeemug.png",
     "alt": "Coffee mug with The Falcons logo"
+  },
+  {
+    "id": 9,
+    "name": "Navy Cap",
+     "description": "Classic navy cap featuring The Falcons print on the front.",
+    "price": 24.99,
+    "category": "headwear",
+    "image": "./assets/images/navy_cap.png",
+    "alt": "Navy cap with The Falcons print"
   }
 ]
