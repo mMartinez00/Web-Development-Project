@@ -8,7 +8,7 @@
     "image": "./assets/images/beige_cap.png",
     "alt": "Beige cap with The Falcons logo"
   },
-   {
+  {
     "id": 2,
     "name": "Supreme-Style Sticker",
     "description": "Bold, Supreme-inspired sticker featuring 'The Falcons' wordmark.",
@@ -33,34 +33,38 @@
     "price": 49.99,
     "category": "hoodie",
     "image": "./assets/images/grey_tshirt.png",
-    "alt": "Grey T-shirt with The Falcons eagle logo printed on the right chest."
+    "alt": "Grey T-shirt with The Falcons eagle logo printed on the right chest.",
+    "sizes": ["s", "m", "l", "xl"]
   },
   {
     "id": 5,
-    "name": "Black Hoodie - The Falcons",
+    "name": "Black Hoodie",
     "description": "Black hoodie with 'The Falcons' text across the chest.",
     "price": 52.99,
     "category": "hoodie",
     "image": "./assets/images/black_hoodie.png",
-    "alt": "Black hoodie with The Falcons text"
+    "alt": "Black hoodie with The Falcons text",
+    "sizes": ["s", "m", "l", "xl"]
   },
   {
     "id": 6,
-    "name": "Grey Hoodie - Chest Print",
+    "name": "Grey Hoodie",
     "description": "Grey hoodie with a small 'The Falcons' chest print on the right side.",
     "price": 52.99,
     "category": "hoodie",
     "image": "./assets/images/grey_hoodie.png",
-    "alt": "Grey hoodie with small The Falcons chest print"
+    "alt": "Grey hoodie with small The Falcons chest print",
+    "sizes": ["s", "m", "l", "xl"]
   },
   {
     "id": 7,
-    "name": "Black Falcons Eagle T-Shirt",
+    "name": "Black Falcons T-Shirt",
     "description": "Black T-shirt with The Falcons logo.",
     "price": 29.99,
     "category": "tshirt",
     "image": "./assets/images/black_tshirt.png",
-    "alt": "Black T-shirt with eagle logo"
+    "alt": "Black T-shirt with eagle logo",
+    "sizes": ["s", "m", "l", "xl"]
   },
   {
     "id": 8,
@@ -74,7 +78,7 @@
   {
     "id": 9,
     "name": "Navy Cap",
-     "description": "Classic navy cap featuring The Falcons print on the front.",
+    "description": "Classic navy cap featuring The Falcons print on the front.",
     "price": 24.99,
     "category": "headwear",
     "image": "./assets/images/navy_cap.png",

@@ -113,6 +113,40 @@
     font-weight: bold;
 }
 
+/* Size Select Wrapper */
+.products__card-sizes-group {
+    margin-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.products__card-sizes-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* Size Select Element */
+.products__card-sizes-select {
+    padding: 0.35rem 0.5rem;
+    font-size: 0.9rem;
+    border: 1px solid var(--dark-color);
+    border-radius: var(--border-radius-sm);
+    background-color: var(--dark-btn-color-grey);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    width: 100%;
+}
+
+.products__card-sizes-select:hover {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(187, 46, 31, 0.4);
+}
+
+
 .products__card-btn {
     padding: .6rem 1rem;
     background-color: var(--secondary-color);
