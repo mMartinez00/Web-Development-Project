@@ -1,6 +1,19 @@
 export function addToCart(productID, selectedSize) {
     const size = selectedSize === null ? "One Size" : selectedSize
 
-    console.log(productID)
-    console.log(size)
+    let item = {
+        id: productID,
+        size,
+    }
+
+    const cart = JSON.parse(localStorage.getItem("cart")) || []
+
+    cart.push(item)
+
+
+    localStorage.setItem("cart", JSON.stringify(cart))
+
+    console.log(localStorage)
+
+    
 }
