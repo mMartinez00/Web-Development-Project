@@ -83,5 +83,14 @@
     "category": "headwear",
     "image": "./assets/images/navy_cap.png",
     "alt": "Navy cap with The Falcons print"
+  },
+  {
+    "id": 9,
+    "name": "Black Matte Bottle",
+    "description": "Sleek black matte water bottle featuring The Falcons logo. Durable, lightweight, and perfect for staying hydrated on the go.",
+    "price": 24.99,
+    "category": "bottle",
+    "image": "./assets/images/matteblack_bottle.png",
+    "alt": "Navy cap with The Falcons print"
   }
 ]
