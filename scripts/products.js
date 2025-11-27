@@ -4,7 +4,7 @@ let allProducts;
 // Fetch Data
 async function fetchProducts() {
     try {
-        const response = await fetch("../data/products.json");
+        const response = await fetch("/data/products.json");
         
         if(!response.ok) {
             alert("Error fetching data!")
@@ -26,8 +26,8 @@ function setFilters() {
     const filter = document.getElementById("category-filter")
     const price = document.getElementById("price")
 
-    filter.addEventListener("change", () => applyFilters())
-    price.addEventListener("change", () => applyFilters())
+    filter.addEventListener("change", applyFilters)
+    price.addEventListener("change", applyFilters)
 }
 
 // Apply filters
