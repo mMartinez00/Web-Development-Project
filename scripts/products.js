@@ -4,7 +4,7 @@ let allProducts;
 // Fetch Data
 async function fetchProducts() {
     try {
-        const response = await fetch("/data/products.json");
+        const response = await fetch("data/products.json");
         
         if(!response.ok) {
             alert("Error fetching data!")
