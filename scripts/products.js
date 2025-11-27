@@ -1,5 +1,7 @@
 const productsGrid = document.querySelector(".products__grid")
+let allProducts;
 
+// Fetch Data
 async function fetchProducts() {
     try {
         const response = await fetch("../data/products.json");
@@ -19,15 +21,40 @@ async function fetchProducts() {
 
 }
 
-function setFilters(data) {
-    // const categories = 
-    // console.log(data)
+// Listen for filter change
+function setFilters() {
+    const filter = document.getElementById("category-filter")
+    const price = document.getElementById("price")
+
+    filter.addEventListener("change", () => applyFilters())
+    price.addEventListener("change", () => applyFilters())
 }
 
-function loadProducts(data) {
-    const filters = document.querySelectorAll
+// Apply filters
+function applyFilters() {
+    let result = [...allProducts];
+    const categoryValue = document.getElementById("category-filter").value
+    const priceValue = document.getElementById("price").value
 
-   const productsCard = data.map((product) => {
+    if(categoryValue !== "all") {
+        result = result.filter(product => product.category === categoryValue)
+    }
+
+    if(priceValue === "low-to-high") {
+        result.sort((a, b) => a.price - b.price);
+    }
+
+    if(priceValue === "high-to-low") {
+        result.sort((a, b) => b.price - a.price)
+    }
+
+    loadProducts(result)
+}
+
+// Load products
+function loadProducts(allProducts) {
+
+   const productsCard = allProducts.map((product) => {
         return `
         <article class="products__card" id=${product.id}>
              <div class="products__card-image-container">
@@ -40,7 +67,7 @@ function loadProducts(data) {
                     <p class="products__card-price">${product.price}</p>
                     ${["hoodie", "tshirt"].includes(product.category) ? `
                         <div class="products__card-sizes-group">
-                            <label for="sizes" class="products__card-sizes-label">Sizes:</label>
+                            <label for="sizes" class="products__card-sizes-label">Size:</label>
 
                             <select 
                                 name="sizes" 
@@ -61,11 +88,12 @@ function loadProducts(data) {
     `
     })
 
-    // setFilters(data)
-    
-
     productsGrid.innerHTML = productsCard.join("")
 
 }
 
-fetchProducts().then((data) => loadProducts(data))
+fetchProducts().then((data) => {
+    allProducts = data;
+    loadProducts(allProducts)
+    setFilters()
+})

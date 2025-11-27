@@ -31,7 +31,7 @@
     "name": "Grey Falcons T-Shirt",
     "description": "Blue hoodie with The Falcons eagle logo on the front.",
     "price": 49.99,
-    "category": "hoodie",
+    "category": "tshirt",
     "image": "./assets/images/grey_tshirt.png",
     "alt": "Grey T-shirt with The Falcons eagle logo printed on the right chest.",
     "sizes": ["s", "m", "l", "xl"]
