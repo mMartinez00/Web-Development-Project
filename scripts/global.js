@@ -1,4 +1,4 @@
-import { getCartItems } from "./cart.js";
+import { getCartItems } from "./cartStorage.js";
 
 const navbarMenu = document.querySelector(".navbar__menu")
 

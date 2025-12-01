@@ -1,4 +1,4 @@
-import {addToCart} from "./cart.js"
+import { addToCart } from "./cartStorage.js"
 const productsGrid = document.querySelector(".products__grid")
 let allProducts;
 
