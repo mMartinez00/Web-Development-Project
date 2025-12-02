@@ -15,9 +15,7 @@ function insertCart() {
 
         navbarMenu.appendChild(li)
     }
-  
 
-    console.log(cart)
 }
 
 insertCart()

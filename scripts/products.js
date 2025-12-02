@@ -89,6 +89,8 @@ function loadProducts(allProducts) {
     `
     })
 
+    console.log(allProducts)
+
     productsGrid.innerHTML = productsCard.join("")
 
     const addToCartBtns = document.getElementsByClassName("products__card-btn")
@@ -96,12 +98,10 @@ function loadProducts(allProducts) {
     for(let i = 0; i < addToCartBtns.length; i++) {
         addToCartBtns[i].addEventListener("click", () => {
             const card = addToCartBtns[i].closest(".products__card")
-            const productID = addToCartBtns[i].closest(".products__card").id
             const sizeSelectElement = card.querySelector(".products__card-sizes-select");
             const selectedSize = sizeSelectElement ? sizeSelectElement.value : null;
 
-            
-            addToCart(productID, selectedSize)
+            addToCart(allProducts[i], selectedSize)
 
         })
     }

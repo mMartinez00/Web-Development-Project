@@ -17,28 +17,31 @@ export function getCartItems() {
     return getCart();
 }
 
-export function addToCart(productID, selectedSize) {
+// Export add items to cart
+export function addToCart(product, selectedSize) {
     const size = selectedSize === null ? "One Size" : selectedSize
 
     const cart = getCart();
 
     const existingItem = cart.find(
-        (item) => item.id === productID && item.size === size
+        (item) => item.id === product.id && item.selectedSize === size
     );
 
     if(existingItem) {
         existingItem.quantity += 1;
     } else {
         cart.push({
-            id: productID,
-            size: size,
+            ...product,
+            selectedSize: size,
             quantity: 1
         })
     }
 
+
     saveCart(cart)
+}
 
-    console.log(localStorage)
-
-    
+// Export delete items from cart
+export function deleteFromCart() {
+    console.log(123)
 }
