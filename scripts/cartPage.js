@@ -1,10 +1,12 @@
-import { getCartItems, deleteFromCart } from "./cartStorage.js";
+import { getCartItems, removeFromCart } from "./cartStorage.js";
 const cartContent = document.querySelector(".cart__content")
 
 function displayCart() {
     const cart = getCartItems()
 
-    cart.forEach((item) => {
+    cartContent.innerHTML = "";
+
+    cart.forEach((item, index) => {
 
         const productItem = document.createElement("div")
         productItem.className = "cart__item";
@@ -43,6 +45,13 @@ function displayCart() {
         `
 
         cartContent.appendChild(productItem)
+
+        const removeBtn = productItem.querySelector(".cart__item-remove-btn")
+
+        removeBtn.addEventListener("click", () => {
+            removeFromCart(index) // update storage
+            displayCart() // re-render UI
+        })
     })
  
 }

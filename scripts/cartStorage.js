@@ -42,6 +42,9 @@ export function addToCart(product, selectedSize) {
 }
 
 // Export delete items from cart
-export function deleteFromCart() {
-    console.log(123)
+export function removeFromCart(index) {
+    let storedCart = getCart()
+    storedCart.splice(index, 1)
+    saveCart(storedCart)
+    console.log(storedCart)
 }
