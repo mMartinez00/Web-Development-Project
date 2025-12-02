@@ -89,8 +89,6 @@ function loadProducts(allProducts) {
     `
     })
 
-    console.log(allProducts)
-
     productsGrid.innerHTML = productsCard.join("")
 
     const addToCartBtns = document.getElementsByClassName("products__card-btn")
