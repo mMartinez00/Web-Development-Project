@@ -78,8 +78,7 @@ function displayCart() {
         qtyBtn.forEach((btn) => {
             btn.addEventListener("click", (e) => {
             updateQuantity(e.currentTarget, index)
-            // saveCart(cartItems);
-            console.log(cartItems)
+            saveCart(cartItems);    
         })  
         })
 

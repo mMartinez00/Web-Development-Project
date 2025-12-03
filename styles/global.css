@@ -72,7 +72,7 @@ main {
     transition: transform .3s ease;
 }
 
-.navbar__link, .footer__social-link {
+.navbar__link, .navbar__link--cart, .footer__social-link {
     font-size: 1.4rem;
     text-decoration: none;
     color: var(--text-color);

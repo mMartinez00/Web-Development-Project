@@ -10,6 +10,9 @@ function getCart() {
 // Save cart array back to localStorage
 export function saveCart(cart) {
     localStorage.setItem(cartKey, JSON.stringify(cart))
+
+    // notify the rest of the app that the cart has changed
+    window.dispatchEvent(new CustomEvent("cartUpdated"));
 }
 
 // Export cart to different pages
@@ -39,6 +42,9 @@ export function addToCart(product, selectedSize) {
 
 
     saveCart(cart)
+
+    // Notify other scripts that cart has been updated
+    window.dispatchEvent(new CustomEvent("cartUpdated"));
 }
 
 // Export delete items from cart
@@ -46,5 +52,4 @@ export function removeFromCart(index) {
     let storedCart = getCart()
     storedCart.splice(index, 1)
     saveCart(storedCart)
-    console.log(storedCart)
 }
