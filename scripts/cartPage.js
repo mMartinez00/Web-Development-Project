@@ -1,12 +1,17 @@
 import { getCartItems, removeFromCart } from "./cartStorage.js";
 const cartContent = document.querySelector(".cart__content")
+const subtotalElement = document.querySelector(".cart__summary-subtotal")
+const shippingElement = document.querySelector(".cart__summary-shipping")
+const discountElement = document.querySelector(".cart__summary-discount")
+const taxElement = document.querySelector(".cart__summary-tax")
+const totalElement = document.querySelector(".cart__summary-total-value")
 
 function displayCart() {
-    const cart = getCartItems()
+    const cartItems = getCartItems()
 
     cartContent.innerHTML = "";
 
-    cart.forEach((item, index) => {
+    cartItems.forEach((item, index) => {
 
         const productItem = document.createElement("div")
         productItem.className = "cart__item";
@@ -25,7 +30,7 @@ function displayCart() {
                         <div class="cart__item-details">
                             <h2 class="cart__item-title">Beige Cap</h2>
                             <p class="cart__item-desc">
-                                Classic beige cap featuring The Falcons logo on the front.
+                                ${item.description}
                             </p>
     
                             <div class="cart__item-qty">
@@ -44,8 +49,10 @@ function displayCart() {
                     </div>
         `
 
+        // Append cart products to UI 
         cartContent.appendChild(productItem)
 
+        // Remove Item from cart
         const removeBtn = productItem.querySelector(".cart__item-remove-btn")
 
         removeBtn.addEventListener("click", () => {
@@ -53,7 +60,31 @@ function displayCart() {
             displayCart() // re-render UI
         })
     })
+
+    updateCartSummary(cartItems)
  
+}
+
+function updateCartSummary(cartItems) {
+    let subtotal = 0;
+    let shipping = cartItems.length > 0 ? 6.99 : 0;
+    let discount = 0;
+    let taxRate = 0.04
+
+    // Calculate total price * quantity
+    cartItems.forEach((item) => subtotal += item.price * item.quantity)
+
+    // Calculate taxrate * subtotal
+    const taxAmount = taxRate * subtotal
+    // Calculate total price
+    const total = subtotal + shipping + discount + taxAmount
+
+    // Render Cart summary
+    subtotalElement.innerText = `$${subtotal.toFixed(2)}`;
+    shippingElement.innerText = `$${shipping.toFixed(2)}`;
+    discountElement.innerText = `$${discount.toFixed(2)}`;
+    taxElement.innerText = `$${taxAmount.toFixed(2)}`;
+    totalElement.innerText = `$${total.toFixed(2)}`;
 }
 
 displayCart()
