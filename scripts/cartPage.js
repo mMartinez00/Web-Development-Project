@@ -1,13 +1,25 @@
 import { getCartItems, removeFromCart, saveCart } from "./cartStorage.js";
-const cartContent = document.querySelector(".cart__content")
-const subtotalElement = document.querySelector(".cart__summary-subtotal")
-const shippingElement = document.querySelector(".cart__summary-shipping")
-const discountElement = document.querySelector(".cart__summary-discount")
-const taxElement = document.querySelector(".cart__summary-tax")
-const totalElement = document.querySelector(".cart__summary-total-value")
+const cartContent = document.querySelector(".cart__content");
+const subtotalElement = document.querySelector(".cart__summary-subtotal");
+const shippingElement = document.querySelector(".cart__summary-shipping");
+const discountElement = document.querySelector(".cart__summary-discount");
+const taxElement = document.querySelector(".cart__summary-tax");
+const totalElement = document.querySelector(".cart__summary-total-value");
 
 function displayCart() {
     const cartItems = getCartItems()
+
+     if(!cartItems.length) {
+        cartContent.innerHTML = `
+            <div class="cart__empty">
+                <h2 class="cart__empty-header">
+                    Your Cart is Empty.
+                </h2>
+            </div>
+        `
+        updateCartSummary([])
+        return;
+    }
 
     cartContent.innerHTML = "";
 
