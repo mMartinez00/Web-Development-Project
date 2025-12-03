@@ -1,4 +1,4 @@
-import { getCartItems, removeFromCart } from "./cartStorage.js";
+import { getCartItems, removeFromCart, saveCart } from "./cartStorage.js";
 const cartContent = document.querySelector(".cart__content")
 const subtotalElement = document.querySelector(".cart__summary-subtotal")
 const shippingElement = document.querySelector(".cart__summary-shipping")
@@ -53,18 +53,31 @@ function displayCart() {
         cartContent.appendChild(productItem)
 
         // Remove Item from cart
-        const removeBtn = productItem.querySelector(".cart__item-remove-btn")
+        const removeBtn = productItem.querySelector(".cart__item-remove-btn");
 
-        removeBtn.addEventListener("click", () => {
+         removeBtn.addEventListener("click", () => {
             removeFromCart(index) // update storage
             displayCart() // re-render UI
         })
+        
+        // Update Item Quantity
+        const qtyBtn = productItem.querySelectorAll(".cart__item-qty-btn");
+
+        qtyBtn.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+            updateQuantity(e.currentTarget, index)
+            // saveCart(cartItems);
+            console.log(cartItems)
+        })  
+        })
+
     })
 
     updateCartSummary(cartItems)
  
 }
 
+// Update Cart Summary
 function updateCartSummary(cartItems) {
     let subtotal = 0;
     let shipping = cartItems.length > 0 ? 6.99 : 0;
@@ -85,6 +98,38 @@ function updateCartSummary(cartItems) {
     discountElement.innerText = `$${discount.toFixed(2)}`;
     taxElement.innerText = `$${taxAmount.toFixed(2)}`;
     totalElement.innerText = `$${total.toFixed(2)}`;
+}
+
+// Update Items Quantity
+function updateQuantity(btn, index) {
+    // Get current cart
+    const cart = getCartItems()
+
+    // Get the item we want to update
+    const item = cart[index];
+    if(!item) return;
+
+    // Current quantity
+    let quantity = item.quantity || 1
+
+    const action = btn.getAttribute("aria-label");
+
+    if(action === "Increase quantity") {
+        quantity = quantity + 1
+    }
+
+    if(action === "Decrease quantity") {
+        quantity = quantity === 1 ? 1 : quantity - 1
+    }
+
+    // Write new quantity back to item
+    item.quantity = quantity
+   
+    // Save updated cart
+    saveCart(cart)
+
+    // Re-render cart UI and summary
+    displayCart()
 }
 
 displayCart()

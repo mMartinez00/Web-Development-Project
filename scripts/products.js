@@ -81,7 +81,7 @@ function loadProducts(allProducts) {
                                 <option value="xl">XL</option>
                             </select>
                         </div>
-` : ""}
+` : ""} 
                     <button class="products__card-btn">Add to Cart</button>
                 </div>
             </div>

@@ -8,7 +8,7 @@ function getCart() {
 }
 
 // Save cart array back to localStorage
-function saveCart(cart) {
+export function saveCart(cart) {
     localStorage.setItem(cartKey, JSON.stringify(cart))
 }
 
