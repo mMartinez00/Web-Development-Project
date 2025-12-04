@@ -38,9 +38,6 @@ function formatBlogDate(dateString) {
 
 function createBlogHTML(blog) {
   const formattedDate = formatBlogDate(blog.date)
-
-  console.log(blog.image)
-
  
   return `
       <div class="blog__item">
@@ -115,4 +112,36 @@ async function initBlogs() {
   setupLoadMoreButton()
 }
 
-document.addEventListener("DOMContentLoaded", initBlogs)
+function setupUpdateForm() {
+  const form =  document.querySelector(".update__form");
+  const emailInput = document.querySelector(".update__email")
+  const modalContainer = document.querySelector(".modal__container")
+  const subMessage = document.querySelector(".modal__message-sub")
+
+  if(!form || !emailInput) return;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault(); // Stop page from reloading
+
+    const email = emailInput.value.trim()
+    if(!email) return;
+
+    subMessage.innerText = `You'll now recieve updates to: ${email}`
+
+    // Show modal
+    modalContainer.classList.remove("modal__container--hidden");
+
+    // Clear input
+    emailInput.value = "";
+
+    // Hide modal after 1.75s
+    setTimeout(() => {
+      modalContainer.classList.add("modal__container--hidden");
+    }, 1750);
+  })
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initBlogs();
+  setupUpdateForm();
+})

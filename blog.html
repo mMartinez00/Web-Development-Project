@@ -50,19 +50,19 @@
     </div>
 
     <div class="update__form-box">
-      <form class="update__form" action="mailto:example@gmail.com" method="post" enctype="text/plain">
+      <form class="update__form" action="#" method="post" enctype="text/plain">
 
         <div class="update__label-box">
           <label class="update__label" for="email">Email:</label>
           <input class="update__email" type="email" id="email" name="email" placeholder="example@gmail.com" required>
         </div>
 
+        <div class="update__button-box">
+            <button class="update__submit" type="submit">Submit</button>
+        </div>
+
       </form>
     </div>
-
-    <div class="update__button-box">
-          <button class="update__submit" type="submit" value="Submit">Submit</button>
-      </div>
 
   </div>
 </section>
@@ -88,6 +88,14 @@
         </li>
     </ul>
 </footer>
+
+<div class="modal__container modal__container--hidden">
+    <div class="modal__overlay"></div>
+    <div class="modal__box">
+        <p class="modal__message-main">Thank you for subscribing!</p>
+        <p class="modal__message-sub"></p>
+    </div>
+</div>
 
 <script type="module" src="./scripts/global.js"></script>
 <script src="./scripts/blog.js"></script>
