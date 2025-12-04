@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles/blog.css">
   <title>The Falcons Post</title>
 </head>
-<body>
+<body class="blog-page">
 
 <nav class="navbar">
    <div class="navbar__brand">
@@ -38,52 +38,6 @@
    
 <main class="main">
   <section class="blog">
-    
-    <!-- Blog Post 1 -->
-    <div class="blog__item">
-      <div class="blog__image-box">
-        <img class="blog__image" 
-             src="assets/images/falcons_logo.png" 
-             alt="falcons logo">
-      </div>
-
-      <div class="blog__content">
-        <div class="blog__header">
-          <h2 class="blog__title">Blog Title</h2>
-          <p class="blog__date"><strong>Tuesday, October 14th, 2025</strong></p>
-        </div>
-
-        <p class="blog__text">
-          Lorem ipsum dolor sit amet. Qui necessitatibus aliquid est
-          voluptatem odio ut nemo autem et quidem temporibus qui modi
-          quam! Ut accusantium adipisci et rerum fugit et iure explicabo aut
-          voluptas cupiditate ut fugiat laborum.
-        </p>
-      </div>
-    </div>
-
-    <!-- Blog Post 2 -->
-    <div class="blog__item">
-      <div class="blog__image-box">
-        <img class="blog__image" 
-             src="assets/images/falcons_logo.png"
-             alt="falcons logo">
-      </div>
-
-      <div class="blog__content">
-        <div class="blog__header">
-          <h2 class="blog__title">Blog Title</h2>
-          <p class="blog__date"><strong>Tuesday, October 14th, 2025</strong></p>
-        </div>
-
-        <p class="blog__text">
-          Lorem ipsum dolor sit amet. Qui necessitatibus aliquid est
-          voluptatem odio ut nemo autem et quidem temporibus qui modi
-          quam! Ut accusantium adipisci et rerum fugit et iure explicabo aut
-          voluptas cupiditate ut fugiat laborum.
-        </p>
-      </div>
-    </div>
 
   </section>
 
@@ -96,19 +50,19 @@
     </div>
 
     <div class="update__form-box">
-      <form class="update__form" action="mailto:example@gmail.com" method="post" enctype="text/plain">
+      <form class="update__form" action="#" method="post" enctype="text/plain">
 
         <div class="update__label-box">
           <label class="update__label" for="email">Email:</label>
           <input class="update__email" type="email" id="email" name="email" placeholder="example@gmail.com" required>
         </div>
 
+        <div class="update__button-box">
+            <button class="update__submit" type="submit">Submit</button>
+        </div>
+
       </form>
     </div>
-
-    <div class="update__button-box">
-          <button class="update__submit" type="submit" value="Submit">Submit</button>
-      </div>
 
   </div>
 </section>
@@ -135,7 +89,16 @@
     </ul>
 </footer>
 
+<div class="modal__container modal__container--hidden">
+    <div class="modal__overlay"></div>
+    <div class="modal__box">
+        <p class="modal__message-main">Thank you for subscribing!</p>
+        <p class="modal__message-sub"></p>
+    </div>
+</div>
+
 <script type="module" src="./scripts/global.js"></script>
+<script src="./scripts/blog.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,171 @@
+[
+  {
+    "id": 1,
+    "title": "Introducing Our New Falcons Blog",
+    "date": "2025-10-14",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt neque vel pellentesque sodales.",
+    "image": "assets/images/blog1.png"
+  },
+  {
+    "id": 2,
+    "title": "Behind The Scenes of Falcons Development",
+    "date": "2025-11-07",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor mi ac justo malesuada tempus.",
+    "image": "assets/images/blog2.png"
+  },
+  {
+    "id": 3,
+    "title": "Falcons Match Recap: A Strong Performance",
+    "date": "2025-12-01",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis ullamcorper sodales.",
+    "image": "assets/images/blog3.png"
+  },
+  {
+    "id": 4,
+    "title": "Building a Better User Experience",
+    "date": "2025-12-15",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus odio sit amet nisl placerat.",
+    "image": "assets/images/blog4.png"
+  },
+
+  {
+    "id": 5,
+    "title": "Designing the Future of Falcons UI",
+    "date": "2025-09-02",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia sapien non urna molestie.",
+    "image": "assets/images/blog5.png"
+  },
+  {
+    "id": 6,
+    "title": "Optimizing Site Speed for Better Performance",
+    "date": "2025-08-19",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat lorem et lacus pulvinar.",
+    "image": "assets/images/blog6.png"
+  },
+  {
+    "id": 7,
+    "title": "How We Built Our Blog System",
+    "date": "2025-07-11",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum lacus id auctor cursus.",
+    "image": "assets/images/blog7.png"
+  },
+  {
+    "id": 8,
+    "title": "New Branding, New Era",
+    "date": "2025-06-27",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim sem et magna scelerisque.",
+    "image": "assets/images/blog8.png"
+  },
+  {
+    "id": 9,
+    "title": "Player Highlight: Falcons Rising Star",
+    "date": "2025-06-10",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies augue sit amet volutpat.",
+    "image": "assets/images/blog9.png"
+  },
+  {
+    "id": 10,
+    "title": "The Falcons Community Event Recap",
+    "date": "2025-05-22",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt nisl sit amet purus porta.",
+    "image": "assets/images/blog10.png"
+  },
+  {
+    "id": 11,
+    "title": "Top 5 Moments of the Falcons Season",
+    "date": "2025-05-03",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit elit sit amet sapien pretium.",
+    "image": "assets/images/blog11.png"
+  },
+  {
+    "id": 12,
+    "title": "How We Organize Our Design Files",
+    "date": "2025-04-18",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis magna eu efficitur.",
+    "image": "assets/images/blog12.png"
+  },
+  {
+    "id": 13,
+    "title": "The Falcons Coding Workflow",
+    "date": "2025-04-02",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula neque eget odio consequat.",
+    "image": "assets/images/blog13.png"
+  },
+  {
+    "id": 14,
+    "title": "Testing Strategies for a Smooth Launch",
+    "date": "2025-03-14",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id urna cursus eleifend.",
+    "image": "assets/images/blog14.png"
+  },
+  {
+    "id": 15,
+    "title": "A Message From the Falcons Team",
+    "date": "2025-03-01",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum ipsum in elit blandit.",
+    "image": "assets/images/blog15.png"
+  },
+  {
+    "id": 16,
+    "title": "What We Learned This Season",
+    "date": "2025-02-12",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet turpis blandit, congue velit at.",
+    "image": "assets/images/blog16.png"
+  },
+  {
+    "id": 17,
+    "title": "How Fans Inspired Our New Branding",
+    "date": "2025-01-28",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Curabitur tincidunt magna.",
+    "image": "assets/images/blog17.png"
+  },
+  {
+    "id": 18,
+    "title": "A Look Back at Falcons History",
+    "date": "2025-01-10",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl pharetra, sodales nunc a.",
+    "image": "assets/images/blog18.png"
+  },
+  {
+    "id": 19,
+    "title": "Meet the Developers Behind the Falcons Website",
+    "date": "2024-12-20",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae nulla vitae libero sollicitudin.",
+    "image": "assets/images/blog19.png"
+  },
+  {
+    "id": 20,
+    "title": "Training Insights: Preparing for the Season",
+    "date": "2024-12-03",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac urna tristique, imperdiet mauris.",
+    "image": "assets/images/blog20.png"
+  },
+  {
+    "id": 21,
+    "title": "Why We Redesigned the Homepage",
+    "date": "2024-11-16",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac sapien eu lectus tincidunt ultricies.",
+    "image": "assets/images/blog21.png"
+  },
+  {
+    "id": 22,
+    "title": "Falcons Merchandise: What’s Coming Next",
+    "date": "2024-11-01",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla metus vitae venenatis.",
+    "image": "assets/images/blog22.png"
+  },
+  {
+    "id": 23,
+    "title": "2025: What’s Ahead for the Falcons",
+    "date": "2024-10-15",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis risus ut orci iaculis.",
+    "image": "assets/images/blog23.png"
+  },
+  {
+    "id": 24,
+    "title": "How We Plan New Features",
+    "date": "2024-10-01",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin nibh id lectus.",
+    "image": "assets/images/blog24.png"
+  }
+]

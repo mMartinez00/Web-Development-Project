@@ -42,99 +42,33 @@
         <h1 class="cart__title">Your Cart</h1>
 
         <section class="cart__content">
-            <div class="cart__item">
-                <div class="cart__item-main">
-                    <div class="cart__item-media">
-                        <img
-                            class="cart__item-image"
-                            src="./assets/images/beige_cap.png"
-                            alt="product image"
-                            width="150"
-                            height="150"
-                        >
-                    </div>
-
-                    <div class="cart__item-details">
-                        <h2 class="cart__item-title">Beige Cap</h2>
-                        <p class="cart__item-desc">
-                            Classic beige cap featuring The Falcons logo on the front.
-                        </p>
-
-                        <div class="cart__item-qty">
-                            <button class="cart__item-qty-btn" aria-label="Decrease quantity">-</button>
-                            <span class="cart__item-qty-value">1</span>
-                            <button class="cart__item-qty-btn" aria-label="Increase quantity">+</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cart__item-side">
-                    <button class="cart__item-remove-btn" aria-label="Remove item">
-                        <i class="fa-solid fa-trash-can"></i>
-                    </button>
-                    <p class="cart__item-price">$40</p>
-                </div>
-            </div>
-
-            <div class="cart__item">
-                <div class="cart__item-main">
-                    <div class="cart__item-media">
-                        <img
-                            class="cart__item-image"
-                            src="./assets/images/beige_cap.png"
-                            alt="product image"
-                            width="150"
-                            height="150"
-                        >
-                    </div>
-
-                    <div class="cart__item-details">
-                        <h2 class="cart__item-title">Beige Cap</h2>
-                        <p class="cart__item-desc">
-                            Classic beige cap featuring The Falcons logo on the front.
-                        </p>
-
-                        <div class="cart__item-qty">
-                            <button class="cart__item-qty-btn" aria-label="Decrease quantity">-</button>
-                            <span class="cart__item-qty-value">1</span>
-                            <button class="cart__item-qty-btn" aria-label="Increase quantity">+</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cart__item-side">
-                    <button class="cart__item-remove-btn" aria-label="Remove item">
-                        <i class="fa-solid fa-trash-can"></i>
-                    </button>
-                    <p class="cart__item-price">$40</p>
-                </div>
-            </div>
+            <!-- Content inserted by JS -->
         </section>
     </section>
 
     <!-- Cart Summary -->
     <aside class="cart__summary">
         <div class="cart__summary-box">
-            <h2 class="cart__summary-title">Cart Summary</h2>
+            <h3 class="cart__summary-title">Cart Summary</h3>
 
             <p class="cart__summary-row">
                 Subtotal:
-                <span class="cart__summary-value">$40</span>
+                <span class="cart__summary-subtotal"></span>
             </p>
 
             <p class="cart__summary-row">
                 Shipping:
-                <span class="cart__summary-value">$0</span>
+                <span class="cart__summary-shipping"></span>
             </p>
 
             <p class="cart__summary-row">
                 Discount:
-                <span class="cart__summary-value">$0</span>
+                <span class="cart__summary-discount"></span>
             </p>
 
             <p class="cart__summary-row">
                 Tax:
-                <span class="cart__summary-value">$0</span>
+                <span class="cart__summary-tax"></span>
             </p>
 
             <hr class="cart__summary-divider">
@@ -142,7 +76,7 @@
             <div class="cart__summary-total-row">
                 <p class="cart__summary-total">
                     Total:
-                    <span class="cart__summary-value">$40</span>
+                    <span class="cart__summary-total-value"></span>
                 </p>
     
                 <button class="cart__summary-checkout-btn">
@@ -176,6 +110,7 @@
 </footer>
 
 <script type="module" src="./scripts/global.js"></script>
+<script type="module" src="./scripts/cartPage.js"></script>
     
 </body>
 </html>
