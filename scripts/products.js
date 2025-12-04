@@ -1,5 +1,7 @@
 import { addToCart } from "./cartStorage.js"
 const productsGrid = document.querySelector(".products__grid")
+const toast = document.getElementById("cart-toast")
+let toastTimeoutId
 let allProducts;
 
 // Fetch Data
@@ -100,10 +102,40 @@ function loadProducts(allProducts) {
             const selectedSize = sizeSelectElement ? sizeSelectElement.value : null;
 
             addToCart(allProducts[i], selectedSize)
+            showCartToast(allProducts[i], selectedSize)
 
         })
     }
 
+}
+
+// Toast
+function showCartToast(product, selectedSize) {
+    // If toast doesnt exist return
+    if(!toast) return;
+
+    let size = selectedSize === null ? "One Size" : selectedSize
+
+    const message = `${product.name} (${size}) was added to your cart.`
+
+    // Message in toast
+    toast.innerHTML = `
+    <p class="toast__message">${message}</p>
+    <a class="toast__link" href="./cart.html">View Cart</a>
+    `
+    // If toast time is running, restart
+    if(toastTimeoutId) {
+        clearTimeout(toastTimeoutId)
+    }
+
+    // Change class name
+    toast.className = "toast toast--visible"
+
+    // Run toast
+    toastTimeoutId = setTimeout(() => {
+        toast.className = "toast toast--hidden"
+    }, 2500)
+    
 }
 
 fetchProducts().then((data) => {
