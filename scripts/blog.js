@@ -114,9 +114,11 @@ async function initBlogs() {
 
 function setupUpdateForm() {
   const form =  document.querySelector(".update__form");
-  const emailInput = document.querySelector(".update__email")
-  const modalContainer = document.querySelector(".modal__container")
-  const subMessage = document.querySelector(".modal__message-sub")
+  const emailInput = document.querySelector(".update__email");
+  const modalContainer = document.querySelector(".modal__container");
+  const subMessage = document.querySelector(".modal__message-sub");
+  const modalOverlay = document.querySelector(".modal__overlay");
+  let timeoutID;
 
   if(!form || !emailInput) return;
 
@@ -124,7 +126,7 @@ function setupUpdateForm() {
     e.preventDefault(); // Stop page from reloading
 
     const email = emailInput.value.trim()
-    if(!email) return;
+    if(!form || !emailInput || !modalContainer || !subMessage || !modalOverlay) return;
 
     subMessage.innerText = `You'll now recieve updates to: ${email}`
 
@@ -135,9 +137,16 @@ function setupUpdateForm() {
     emailInput.value = "";
 
     // Hide modal after 1.75s
-    setTimeout(() => {
+    timeoutID = setTimeout(() => {
       modalContainer.classList.add("modal__container--hidden");
-    }, 1750);
+    }, 2000);
+  })
+
+  // Dismiss overlay early
+  modalOverlay.addEventListener("click", () => {
+    modalContainer.classList.add("modal__container--hidden")
+    clearTimeout(timeoutID);
+
   })
 }
 
