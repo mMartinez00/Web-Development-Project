@@ -1,4 +1,12 @@
 const blogsSection = document.querySelector(".blog")
+const BLOGS_PER_LOAD = 8;
+let allBlogs = [];
+let blogsLoadedCount = 0;
+// Create load more button
+const loadMoreBtn = document.createElement("button");
+loadMoreBtn.className = "blog__load-more";
+loadMoreBtn.innerText = "Load More Blogs";
+
 
 async function fetchBlogs() {
      try {
@@ -18,42 +26,93 @@ async function fetchBlogs() {
     }
 }
 
-function loadBlogs(allBlogs) {
-
-    const blogs = allBlogs.map((blog) => {
-
-      const date = new Date(blog.date)
+function formatBlogDate(dateString) {
+  const date = new Date(dateString)
   
-      const formattedDate = new Intl.DateTimeFormat('en-US', {
-        month: '2-digit',
-        day: '2-digit',
-        year: '2-digit',
-      }).format(date)
-
-
-        return `
-            <div class="blog__item">
-              <div class="blog__image-box">
-                <img class="blog__image" 
-                     src="assets/images/falcons_logo.png"
-                     alt="falcons logo">
-              </div>
-
-                      <div class="blog__content">
-                <div class="blog__header">
-                  <h2 class="blog__title">${blog.title}</h2>
-                  <p class="blog__date"><strong>${formattedDate}</p>
-                </div>
-
-                        <p class="blog__text">
-                  ${blog.text}
-                </p>
-              </div>
-            </div>
-            `
-    }) 
-
-    blogsSection.innerHTML = blogs.join("")
+  return new Intl.DateTimeFormat('en-US', {
+      month: '2-digit',
+      day: '2-digit',
+      year: '2-digit',
+    }).format(date)
 }
 
-fetchBlogs().then((data) => loadBlogs(data))
+function createBlogHTML(blog) {
+  const formattedDate = formatBlogDate(blog.date)
+
+  console.log(blog.image)
+
+ 
+  return `
+      <div class="blog__item">
+      <div class="blog__image-box">
+        <img
+          class="blog__image"
+          src="assets/images/falcons_logo.png"
+          alt="${blog.title}"
+        >
+      </div>
+
+      <div class="blog__content">
+        <div class="blog__header">
+          <h2 class="blog__title">${blog.title}</h2>
+          <p class="blog__date"><strong>${formattedDate}</strong></p>
+        </div>
+
+        <p class="blog__text">
+          ${blog.text}
+        </p>
+      </div>
+    </div>
+      `
+}
+
+function renderNextBlogs() {
+  const nextblogs = allBlogs.slice(
+    blogsLoadedCount,
+    blogsLoadedCount + BLOGS_PER_LOAD
+  );
+
+  if(nextblogs.length === 0) return;
+
+  const blogsHTML = nextblogs.map(createBlogHTML).join("");
+
+  // If button is already inside section, insert before it
+  if(blogsSection.contains(loadMoreBtn)) {
+    loadMoreBtn.insertAdjacentHTML("beforebegin", blogsHTML)
+  } else {
+    blogsSection.insertAdjacentHTML("beforeend", blogsHTML)
+  }
+
+  blogsLoadedCount += nextblogs.length
+
+  // If everything is loaded rmeove button
+  if(blogsLoadedCount >= allBlogs.length && blogsSection.contains(loadMoreBtn)) {
+    loadMoreBtn.remove()
+  }
+}
+
+function setupLoadMoreButton() {
+  if(allBlogs.length > blogsLoadedCount && !blogsSection.contains(loadMoreBtn)) {
+    blogsSection.appendChild(loadMoreBtn)
+  }
+
+  loadMoreBtn.addEventListener("click", () => {
+    renderNextBlogs()
+  })
+}
+
+async function initBlogs() {
+  const data = await fetchBlogs();
+
+  if(!data) return
+
+  allBlogs = data
+
+  // Initial chunk
+  renderNextBlogs()
+
+  // Show button if more remain
+  setupLoadMoreButton()
+}
+
+document.addEventListener("DOMContentLoaded", initBlogs)
