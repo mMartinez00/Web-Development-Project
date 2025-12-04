@@ -192,13 +192,15 @@
 .toast__message {
     margin-bottom: 0.5rem;
     font-weight: 500;
+    font-size: 1.250rem;
 }
 
 /* Toast link */
 .toast__link {
     display: inline-block;
-    color: #ffd45c;
+    color: var(--secondary-color);
     font-weight: 600;
-    text-decoration: underline;
+    text-decoration: none;
     margin-top: 0.25rem;
+    font-size: 1.2rem;
 }

@@ -114,9 +114,9 @@ function showCartToast(product, selectedSize) {
     // If toast doesnt exist return
     if(!toast) return;
 
-    let size = selectedSize === null ? "One Size" : selectedSize
+    let size = selectedSize === null ? "" : `Size: ${selectedSize.toUpperCase()}`
 
-    const message = `${product.name} (${size}) was added to your cart.`
+    const message = `${product.name} ${size} <br> was added to your cart.`
 
     // Message in toast
     toast.innerHTML = `
@@ -134,7 +134,7 @@ function showCartToast(product, selectedSize) {
     // Run toast
     toastTimeoutId = setTimeout(() => {
         toast.className = "toast toast--hidden"
-    }, 2500)
+    }, 2750)
     
 }
 
