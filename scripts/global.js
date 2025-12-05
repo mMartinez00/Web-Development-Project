@@ -23,7 +23,7 @@ function insertCart() {
 
 }
 
-function updateCartBadge() {
+export function updateCartBadge() {
     const cart = getCartItems()
     const cartLink = navbarMenu?.querySelector(".navbar__link--cart");
 

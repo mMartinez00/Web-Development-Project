@@ -123,12 +123,6 @@
   margin-top: 0.5rem;
 }
 
-.contact__submit {
-  cursor: pointer;
-}
-
-
-
 @media (max-width: 768px) {
   .contact {
     flex-direction: column;
@@ -143,7 +137,6 @@
 }
 
 .contact__actions {
-
     width: 100%;
     display: flex;
     justify-content: center;   
@@ -152,8 +145,7 @@
 
 
 
-.button.button--primary.contact__submit{
- 
+.contact__button {
     padding: 0.6rem 1.2rem;
     margin: 0 1rem;
     background-color: var(--secondary-color);
@@ -162,15 +154,50 @@
     transition: all 0.3s ease-in;
     cursor: pointer;
     color: var(--text-color)
-
 }
 
-.button.button--primary.contact__submit:focus{
-    outline: none;
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 0 2px rgb(187, 46, 31, 0.4);
+/* Modal */
+/* Modal */
+.modal__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
 }
 
-.button.button--primary.contact__submit {
-    opacity: 0.9;
+.modal__container--hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal__box {
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    padding: 2rem;
+    background-color: var(--light-color);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0.4px 10px rgb(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.modal__message-main {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
 }

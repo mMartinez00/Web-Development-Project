@@ -74,11 +74,10 @@
                     </label>
                         
                     <label for="state" class="checkout__label">
-                        State: <select name="state" id="state" class="checkout__select checkout__select--state">
-                                    <option value="ny">NY</option>
-                                    <option value="ny">NJ</option>
-                                    <option value="ny">CA</option>
-                                </select>
+                        State: 
+                        <select name="state" id="state" class="checkout__select checkout__select--state">
+                         
+                        </select>
                     </label>
 
                     <label for="zipcode" class="checkout__label">
@@ -123,17 +122,26 @@
       <aside class="checkout__summary">
           <h2 class="checkout__summary-title">Cart Summary</h2>
             <div class="checkout__summary-details">
-
-                <p class="checkout__summary-item">Subtotal: <span class="checkout__summary-value">$35</span></p>
-                <p class="checkout__summary-item">Shipping: <span class="checkout__summary-value">$0</span></p>
-                <p class="checkout__summary-item">Discount: <span class="checkout__summary-value">$0</span></p>
-                <p class="checkout__summary-item">Tax: <span class="checkout__summary-value">0</span></p>
+                <p class="checkout__summary-item">Subtotal: 
+                    <span class="checkout__summary-subtotal"></span>
+                </p>
+                <p class="checkout__summary-item">Shipping: 
+                    <span class="checkout__summary-shipping"></span>
+                </p>
+                <p class="checkout__summary-item">Discount:
+                    <span class="checkout__summary-discount"></span>
+                </p>
+                <p class="checkout__summary-item">Tax:
+                    <span class="checkout__summary-tax"></span>
+                </p>
             </div>
 
             <hr class="checkout__summary-divider" />
 
             <div class="checkout__summary-total">
-                <p class="checkout__total-text">Total: <span class="checkout__total-value">$35</span></p>
+                <p class="checkout__total-text">Total: 
+                    <span class="checkout__summary-total-value"></span>
+                </p>
                 <button class="checkout__btn">Place Order</button>
             </div>
         </aside>
@@ -158,7 +166,16 @@
     </ul>
 </footer>
 
+<div class="modal__container modal__container--hidden">
+    <div class="modal__overlay"></div>
+    <div class="modal__box">
+        <p class="modal__message-main">Your Order Has Been Placed!</p>
+        <p class="modal__message-sub">Thank you for shopping with us!</p>
+    </div>
+</div>
+
 <script type="module" src="./scripts/global.js"></script>
+<script type="module" src="/scripts/checkout.js"></script>
     
 </body>
 </html>
