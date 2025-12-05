@@ -90,7 +90,7 @@
 
         <div class="contact__actions">
           <input
-            class="button button--primary contact__submit"
+            class="contact__button"
             type="submit"
             value="Send"
           >
@@ -120,7 +120,16 @@
     </ul>
 </footer>
 
+<div class="modal__container modal__container--hidden">
+    <div class="modal__overlay"></div>
+    <div class="modal__box">
+        <p class="modal__message-main">Thanks for reaching out! We appreciate your message.</p>
+        <p class="modal__message-sub">Someone from our team will review it shortly.</p>
+    </div>
+</div>
+
 <script type="module" src="./scripts/global.js"></script>
+<script src="./scripts/contact.js"></script>
 
 </body>
 </html>
