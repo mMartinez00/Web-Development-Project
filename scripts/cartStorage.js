@@ -53,3 +53,11 @@ export function removeFromCart(index) {
     storedCart.splice(index, 1)
     saveCart(storedCart)
 }
+
+// Clear Cart
+export function clearCart() {
+    const emptyCart = [];
+    localStorage.setItem(cartKey, JSON.stringify(emptyCart))
+
+    return emptyCart;
+}
