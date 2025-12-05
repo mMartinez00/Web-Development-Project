@@ -51,23 +51,27 @@ async function fetchStates() {
     try {
         const response = await fetch("data/state.json")
 
-        if(!response) return;
+        if(!response.ok) return;
 
         const data = await response.json()
 
         return data;
     } catch (error) {
-        console.log("error fetching data")
+        console.log("error fetching data:", error)
     }
 }
 
 // Render to UI
 function renderStates(data) {
+    if(!data) return;
+
     const states = data.map((state) => {
         return `
             <option value="${state.code}">${state.name}</option>
         `
     })
+
+    if(!selectState) return;
 
     selectState.innerHTML = states.join("")
 }
