@@ -8,6 +8,7 @@ const totalElement = document.querySelector(".checkout__summary-total-value");
 const checkoutBtn = document.querySelector(".checkout__btn");
 const modalContainer = document.querySelector(".modal__container");
 const modalOverlay = document.querySelector(".modal__overlay");
+const selectState = document.querySelector(".checkout__select--state")
 let timeoutID;
 
 function displayCartSummary() {
@@ -44,6 +45,34 @@ function displayModal() {
     }, 2000);
 
 }
+
+// Fetch States json data
+async function fetchStates() {
+    try {
+        const response = await fetch("data/state.json")
+
+        if(!response) return;
+
+        const data = await response.json()
+
+        return data;
+    } catch (error) {
+        console.log("error fetching data")
+    }
+}
+
+// Render to UI
+function renderStates(data) {
+    const states = data.map((state) => {
+        return `
+            <option value="${state.code}">${state.name}</option>
+        `
+    })
+
+    selectState.innerHTML = states.join("")
+}
+
+fetchStates().then((data) => renderStates(data))
 
 checkoutBtn.addEventListener("click", () => {
     clearCart()
