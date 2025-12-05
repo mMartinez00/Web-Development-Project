@@ -1,4 +1,5 @@
 import { getCartItems, removeFromCart, saveCart } from "./cartStorage.js";
+import { updateCartBadge } from "./global.js";
 const cartContent = document.querySelector(".cart__content");
 const subtotalElement = document.querySelector(".cart__summary-subtotal");
 const shippingElement = document.querySelector(".cart__summary-shipping");
@@ -78,13 +79,14 @@ function displayCart() {
         qtyBtn.forEach((btn) => {
             btn.addEventListener("click", (e) => {
             updateQuantity(e.currentTarget, index)
-            saveCart(cartItems);    
         })  
         })
 
     })
 
     updateCartSummary(cartItems)
+    updateCartBadge();
+
  
 }
 
