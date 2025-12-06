@@ -1,171 +1,122 @@
 [
   {
     "id": 1,
-    "title": "Introducing Our New Falcons Blog",
-    "date": "2025-10-14",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt neque vel pellentesque sodales.",
-    "image": "assets/images/blog1.png"
+    "title": "Welcome to The Falcons Digital Hub",
+    "date": "2025-01-15",
+    "text": "The Falcons website is now live as LaGuardia’s central online space for community, stories, and school pride. Here, students, faculty, staff, and alumni can explore Falcons merchandise and stay updated on campus highlights. Our goal is to extend the spirit of LaGuardia beyond the physical campus. Whether you’re on campus or abroad, this platform keeps you connected to the Falcon family."
   },
   {
     "id": 2,
-    "title": "Behind The Scenes of Falcons Development",
-    "date": "2025-11-07",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor mi ac justo malesuada tempus.",
-    "image": "assets/images/blog2.png"
+    "title": "New Falcons Merch Drop for Spring Semester",
+    "date": "2025-02-01",
+    "text": "We’re launching a new line of Falcons apparel just in time for the spring semester. The collection includes hoodies, caps, and tees that highlight LaGuardia’s colors and identity. Each item is designed to be comfortable, modern, and easy to wear on and off campus. Show your pride in the classroom, at work, or in the city."
   },
   {
     "id": 3,
-    "title": "Falcons Match Recap: A Strong Performance",
-    "date": "2025-12-01",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis ullamcorper sodales.",
-    "image": "assets/images/blog3.png"
+    "title": "Behind the Design: Our Falcons Logo",
+    "date": "2025-02-10",
+    "text": "The Falcons logo is more than a symbol—it represents resilience, ambition, and community. Our digital platform uses this mark consistently to reinforce the LaGuardia identity. The bold red color palette and clean lines help the brand feel modern and recognizable. Every page you visit is intentionally designed to echo that visual language."
   },
   {
     "id": 4,
-    "title": "Building a Better User Experience",
-    "date": "2025-12-15",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus odio sit amet nisl placerat.",
-    "image": "assets/images/blog4.png"
+    "title": "How The Falcons Connects Students and Alumni",
+    "date": "2025-02-22",
+    "text": "One of the long-term goals of The Falcons website is to keep students and alumni connected. Even after graduation, users can return to the platform to see updates, stories, and new campus initiatives. Alumni can continue to feel part of LaGuardia’s ongoing journey. The site becomes a shared space for memories, growth, and continued engagement."
   },
-
   {
     "id": 5,
-    "title": "Designing the Future of Falcons UI",
-    "date": "2025-09-02",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia sapien non urna molestie.",
-    "image": "assets/images/blog5.png"
+    "title": "Using Your Falcons Account: Registration and Login",
+    "date": "2025-03-01",
+    "text": "Our registration and login system is designed to personalize the Falcons experience. Once signed in, users can more easily return to content and stay connected with brand updates. While this version focuses on the front-end design, it models how a real campus portal could work. In the future, this could expand into saved preferences, event alerts, or exclusive content for registered members."
   },
   {
     "id": 6,
-    "title": "Optimizing Site Speed for Better Performance",
-    "date": "2025-08-19",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat lorem et lacus pulvinar.",
-    "image": "assets/images/blog6.png"
+    "title": "Falcons Fit: Wearing LaGuardia Pride on Campus",
+    "date": "2025-03-10",
+    "text": "Falcons merchandise is meant to feel like a natural part of your daily wardrobe. Students can wear gear to class, to the library, or while commuting. Each piece supports a sense of belonging and shared identity. Wearing the logo is a quiet way of saying, “I’m part of LaGuardia.”"
   },
   {
     "id": 7,
-    "title": "How We Built Our Blog System",
-    "date": "2025-07-11",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum lacus id auctor cursus.",
-    "image": "assets/images/blog7.png"
+    "title": "Highlighting Student Stories and Achievements",
+    "date": "2025-03-20",
+    "text": "The blog section is more than announcements—it’s designed to highlight the voices of the LaGuardia community. From student projects to club achievements, these posts can showcase the work happening across campus. Our goal is to make the digital space feel as alive as the hallways and classrooms. Over time, this can grow into a living archive of Falcons stories."
   },
   {
     "id": 8,
-    "title": "New Branding, New Era",
-    "date": "2025-06-27",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim sem et magna scelerisque.",
-    "image": "assets/images/blog8.png"
+    "title": "Why School Pride Matters in a Community College",
+    "date": "2025-04-01",
+    "text": "At a Community College like LaGuardia, creating a sense of campus pride can be challenging. The Falcons platform helps by offering a digital place where identity and community are visible every day. Merchandise, stories, and updates remind users that they belong to something larger. Even if you’re only on campus for a few hours, the brand can follow you home."
   },
   {
     "id": 9,
-    "title": "Player Highlight: Falcons Rising Star",
-    "date": "2025-06-10",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies augue sit amet volutpat.",
-    "image": "assets/images/blog9.png"
+    "title": "A Clean and Accessible Falcons Design",
+    "date": "2025-04-12",
+    "text": "We designed The Falcons website to feel clean, accessible, and easy to navigate. The layout uses simple grids, clear typography, and consistent colors to avoid overwhelming users. Each page is focused on giving visitors what they need quickly, whether that’s a product, a story, or a link. This structure helps support both first-time visitors and returning community members."
   },
   {
     "id": 10,
-    "title": "The Falcons Community Event Recap",
-    "date": "2025-05-22",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt nisl sit amet purus porta.",
-    "image": "assets/images/blog10.png"
+    "title": "Digital Spaces That Extend Campus Culture",
+    "date": "2025-04-25",
+    "text": "The Falcons is more than an online store; it extends LaGuardia’s culture into the digital world. The site is a place where campus life doesn’t end when you log off Blackboard or leave a classroom. It keeps school colors, logos, and stories within reach. This kind of platform can support a stronger, more connected campus culture over time."
   },
   {
     "id": 11,
-    "title": "Top 5 Moments of the Falcons Season",
-    "date": "2025-05-03",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit elit sit amet sapien pretium.",
-    "image": "assets/images/blog11.png"
+    "title": "Supporting Faculty, Staff, and Campus Departments",
+    "date": "2025-05-05",
+    "text": "While students are a major audience, the platform is also built with faculty and staff in mind. Departments can use this type of site to share updates, spotlight programs, or promote events. Over time, different areas of LaGuardia could contribute content to the blog. The goal is to give every part of the college a shared digital stage."
   },
   {
     "id": 12,
-    "title": "How We Organize Our Design Files",
-    "date": "2025-04-18",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis magna eu efficitur.",
-    "image": "assets/images/blog12.png"
+    "title": "From Prototype to Future Campus Portal",
+    "date": "2025-05-18",
+    "text": "This project is a prototype of what a future LaGuardia-branded portal could look like. It combines merchandise, storytelling, and account-based interaction in one place. Although it currently focuses on front-end features, the structure is ready for future back-end integration. With more development, this could evolve into a full digital hub for campus services and engagement."
   },
   {
     "id": 13,
-    "title": "The Falcons Coding Workflow",
-    "date": "2025-04-02",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula neque eget odio consequat.",
-    "image": "assets/images/blog13.png"
+    "title": "Celebrating LaGuardia Through Visual Identity",
+    "date": "2025-06-01",
+    "text": "The visual identity of The Falcons is inspired directly by LaGuardia’s colors and mascot. Red accents, dark backgrounds, and bold typography help the site feel modern and unified. Every button, card, and section is designed to echo the brand. This creates a consistent experience that feels familiar to anyone connected to the college."
   },
   {
     "id": 14,
-    "title": "Testing Strategies for a Smooth Launch",
-    "date": "2025-03-14",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id urna cursus eleifend.",
-    "image": "assets/images/blog14.png"
+    "title": "Building Community Beyond Graduation",
+    "date": "2025-06-15",
+    "text": "One of the strengths of a digital platform is that it doesn’t close when the semester ends. Alumni can still visit to see what is happening on campus and how the community is growing. The Falcons aims to keep that door open, even after students move on to work or further study. In this way, school pride can continue long after graduation day."
   },
   {
     "id": 15,
-    "title": "A Message From the Falcons Team",
-    "date": "2025-03-01",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum ipsum in elit blandit.",
-    "image": "assets/images/blog15.png"
+    "title": "Falcons Merch as a Conversation Starter",
+    "date": "2025-07-02",
+    "text": "Wearing Falcons merchandise can be a simple way to start conversations with other LaGuardia students and alumni. In a city as large as New York, spotting someone with the same logo can create an instant connection. The site makes these items easier to discover and imagine as part of everyday outfits. Over time, it helps make the brand more visible across the city."
   },
   {
     "id": 16,
-    "title": "What We Learned This Season",
-    "date": "2025-02-12",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet turpis blandit, congue velit at.",
-    "image": "assets/images/blog16.png"
+    "title": "Using The Falcons Site as a New Student",
+    "date": "2025-08-20",
+    "text": "For new students, The Falcons website can act as a soft introduction to LaGuardia’s identity. Before they step on campus, they can see colors, logos, and messages that define the community. Browsing the blog and merchandise gives them a sense of belonging early on. It helps reduce the feeling of being a stranger on the first day of classes."
   },
   {
     "id": 17,
-    "title": "How Fans Inspired Our New Branding",
-    "date": "2025-01-28",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Curabitur tincidunt magna.",
-    "image": "assets/images/blog17.png"
+    "title": "Connecting Campus Life and Online Presence",
+    "date": "2025-09-05",
+    "text": "Campus life no longer exists only in physical spaces. The Falcons bridges in-person experiences with a digital presence that feels current and relevant. A student might attend an event, then later read about similar initiatives on the blog. This connection supports a more continuous experience of campus life, instead of isolated moments."
   },
   {
     "id": 18,
-    "title": "A Look Back at Falcons History",
-    "date": "2025-01-10",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl pharetra, sodales nunc a.",
-    "image": "assets/images/blog18.png"
+    "title": "Falcons Updates: Announcements and Brand News",
+    "date": "2025-09-18",
+    "text": "The blog can also function as a home for brand-related announcements and updates. Whether it’s a new merch drop, a collaboration, or a special campus event, posts can keep the community informed. This reduces the chances of important news getting lost in emails or flyers. Everything related to the Falcons brand can live in one easy-to-access place."
   },
   {
     "id": 19,
-    "title": "Meet the Developers Behind the Falcons Website",
-    "date": "2024-12-20",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae nulla vitae libero sollicitudin.",
-    "image": "assets/images/blog19.png"
+    "title": "Designing for Ease of Use and Clarity",
+    "date": "2025-10-03",
+    "text": "When building The Falcons, we focused heavily on clarity and ease of use. Navigation is simple, product cards are easy to scan, and blog posts are readable and short. The idea is that visitors should understand where to click without overthinking. A clear design helps support a wide audience, from first-semester students to long-time staff."
   },
   {
     "id": 20,
-    "title": "Training Insights: Preparing for the Season",
-    "date": "2024-12-03",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac urna tristique, imperdiet mauris.",
-    "image": "assets/images/blog20.png"
-  },
-  {
-    "id": 21,
-    "title": "Why We Redesigned the Homepage",
-    "date": "2024-11-16",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac sapien eu lectus tincidunt ultricies.",
-    "image": "assets/images/blog21.png"
-  },
-  {
-    "id": 22,
-    "title": "Falcons Merchandise: What’s Coming Next",
-    "date": "2024-11-01",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla metus vitae venenatis.",
-    "image": "assets/images/blog22.png"
-  },
-  {
-    "id": 23,
-    "title": "2025: What’s Ahead for the Falcons",
-    "date": "2024-10-15",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis risus ut orci iaculis.",
-    "image": "assets/images/blog23.png"
-  },
-  {
-    "id": 24,
-    "title": "How We Plan New Features",
-    "date": "2024-10-01",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin nibh id lectus.",
-    "image": "assets/images/blog24.png"
+    "title": "The Long-Term Vision for The Falcons",
+    "date": "2025-10-20",
+    "text": "The long-term vision of The Falcons is to become a sustainable digital hub for LaGuardia Community College. Over time, it could integrate event calendars, student organization highlights, and more interactive features. What starts as merch and content can grow into a central place for connection and engagement. The goal is to support a community that continues to grow, collaborate, and celebrate its shared roots in LaGuardia."
   }
 ]
